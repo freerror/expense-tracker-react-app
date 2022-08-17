@@ -1,0 +1,20 @@
+{
+  "editor.tabSize": 2,
+  "javascript.suggest.paths": false,
+  "path-intellisense.extensionOnImport": true,
+  "indentRainbow.colors": [
+    "rgba(0, 196, 196, 0.1)",
+    "rgba(121, 176, 94, 0.1)",
+    "rgba(210, 70, 0, 0.1)",
+    "rgba(245, 40, 145, 0.1)",
+  ],
+  "editor.renderWhitespace": "all",
+  "editor.lineDecorationsWidth": 7,
+  "editor.glyphMargin": false,
+  "editor.folding": false,
+  "cSpell.words": [
+    "Defaultris",
+    "Roading",
+    "Townington"
+  ],
+}

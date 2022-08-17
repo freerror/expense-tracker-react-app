@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Header 1`] = `
+<DocumentFragment>
+  <header>
+    <h1>
+      Expense Tracker
+    </h1>
+    <div>
+      <ul>
+        <li>
+          <a
+            aria-current="page"
+            class="active"
+            href="/"
+          >
+            Dashboard
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            href="/create"
+          >
+            Create
+          </a>
+        </li>
+        <li>
+          <a
+            class=""
+            href="/help"
+          >
+            Help
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+</DocumentFragment>
+`;

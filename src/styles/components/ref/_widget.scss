@@ -1,0 +1,23 @@
+.widget {
+  background: $main-other;
+  margin-botton: $xl-size;
+}
+
+.widget__message {
+  color: $off-white;
+  padding: $l-size;
+  text-align: center;
+  border-bottom: 1px solid lighten($main-other, 10%);
+}
+
+.widget-header {
+  background: $card-bg;
+  color: $off-white;
+  display: flex;
+  justify-content: space-between;
+  padding: $m-size;
+}
+
+.widget-header__title {
+  margin: 0;
+}

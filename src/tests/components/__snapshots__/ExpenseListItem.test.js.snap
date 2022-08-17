@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test expense list item 1`] = `
+<DocumentFragment>
+  <div>
+    b test description details $140 on 2022/08/01T00:00
+    <span>
+       
+    </span>
+    <button>
+      edit
+    </button>
+  </div>
+</DocumentFragment>
+`;
