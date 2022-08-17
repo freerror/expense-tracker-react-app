@@ -10,3 +10,4 @@ better job of modelling user interaction.
 - [ ] Add basic getting-started installation instructions
 - [ ] Add acknowledgements (Udemy tutor etc)
 - [ ] Add example render
+- [ ] Add FOSS License
