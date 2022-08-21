@@ -4,11 +4,8 @@ import { Provider } from 'react-redux'
 import AppRouter from './routers/AppRouter'
 import './styles/styles.scss'
 import 'normalize.css/normalize.css'
-import { setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate } from './slices/filters'
-import { addExpense, editExpense, removeExpense } from './slices/expenses'
 import getVisibleExpenses from './selectors/expenses'
 import createStore from './store'
-import { v4 as uuid } from 'uuid'
 import expenses from './tests/fixtures/expenses.js'
 
 const preloadedState = {
