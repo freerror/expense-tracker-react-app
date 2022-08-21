@@ -16,10 +16,11 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack server --open",
-    "build": "webpack",
-    "testw": "jest --watchAll",
-    "test": "jest",
-    "testt": "jest -t ExpenseList.test.js"
+    "dev:prod": "webpack server --open --mode production",
+    "build:dev": "webpack",
+    "build:prod": "webpack --mode production",
+    "test:w": "jest --watchAll",
+    "test": "jest"
   },
   "dependencies": {
     "@babel/cli": "^7.18.6",
