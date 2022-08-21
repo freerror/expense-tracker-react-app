@@ -7,8 +7,8 @@ module.exports = {
   // entry: './src/playground/hoc.jsx',
   // entry: './src/playground/redux-101.js',
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
+    filename: '[name].bundle.js',
+    path: path.join(__dirname, 'public')
   },
   resolve: {
     extensions: ['.js', '.jsx']
