@@ -8,7 +8,8 @@ module.exports = {
   // entry: './src/playground/redux-101.js',
   output: {
     filename: '[name].bundle.js',
-    path: path.join(__dirname, 'public')
+    chunkFilename: '[name].bundle.js',
+    path: path.join(__dirname, 'public/scripts')
   },
   resolve: {
     extensions: ['.js', '.jsx']

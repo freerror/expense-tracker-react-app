@@ -1,10 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
-import AppRouter from './routers/AppRouter'
+const AppRouter = React.lazy(() => import('./routers/AppRouter'))
 import './styles/styles.scss'
 import 'normalize.css/normalize.css'
-import getVisibleExpenses from './selectors/expenses'
 import createStore from './store'
 import expenses from './tests/fixtures/expenses.js'
 
@@ -13,19 +12,13 @@ const preloadedState = {
 }
 const store = createStore(preloadedState)
 
-store.subscribe(() => {
-  const { expenses: { items }, filters } = store.getState()
-  console.log(
-    getVisibleExpenses(items, filters)
-  )
-  console.log(filters)
-})
-
 
 const jsx = (
-  <Provider store={store}>
-    <AppRouter />
-  </Provider>
+  <React.Suspense fallback={<>Loading...</>}>
+    <Provider store={store}>
+      <AppRouter />
+    </Provider>
+  </React.Suspense>
 )
 
 const root = ReactDOM.createRoot(document.getElementById("app"))

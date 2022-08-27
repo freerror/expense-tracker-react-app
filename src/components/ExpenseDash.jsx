@@ -1,6 +1,6 @@
 import React from "react"
-import ExpenseList from "./ExpenseList"
-import ExpenseListFilter from "./ExpenseListFilter"
+const ExpenseList = React.lazy(() => import("./ExpenseList"))
+const ExpenseListFilter = React.lazy(() => import("./ExpenseListFilter"))
 
 const ExpenseDashboardPage = (props) => (
   <div>

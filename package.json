@@ -15,8 +15,8 @@
   "author": "Your Name",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack server --open",
-    "dev:prod": "webpack server --open --mode production",
+    "serve": "webpack server --open",
+    "serve:prod": "webpack server --open --mode production",
     "build:dev": "webpack",
     "build:prod": "webpack --mode production",
     "test:w": "jest --watchAll",
