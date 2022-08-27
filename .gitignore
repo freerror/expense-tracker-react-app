@@ -1,2 +1,4 @@
 node_modules
-public/bundle.js
+public/scripts/*
+yarn.lock
+yarn-error.log
