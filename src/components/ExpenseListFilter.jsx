@@ -11,11 +11,10 @@ class ExpenseListFilter extends React.Component {
   onDateRangeChange = (dateRange) => {
     if (dateRange) {
       if (dateRange[0]) {
-        console.log('dateRange', dateRange[0])
         const startDate = dateRange[0].getTime()
         this.props.dispatch(setStartDate(startDate))
-      } else if (dateRange[1]) {
-        console.log('dateRange', dateRange[1])
+      }
+      if (dateRange[1]) {
         const endDate = dateRange[1].getTime()
         this.props.dispatch(setEndDate(endDate))
       }
