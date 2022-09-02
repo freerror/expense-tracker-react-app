@@ -13,6 +13,10 @@
   "description": "boilerplate app",
   "main": "app.jsx",
   "author": "Your Name",
+  "engines": {
+    "node": "16.x",
+    "yarn": "1.x"
+  },
   "license": "MIT",
   "scripts": {
     "serve": "webpack serve --open --mode=development",
