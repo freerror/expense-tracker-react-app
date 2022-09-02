@@ -4,13 +4,11 @@ const ExpenseListFilter = React.lazy(() => import("./ExpenseListFilter"))
 
 const ExpenseDashboardPage = (props) => (
   <div>
-    <div>
-      <h2>
-        This is from my dashboard
-      </h2>
-      <ExpenseListFilter />
-      <ExpenseList />
-    </div>
+    <h2>
+      This is from my dashboard
+    </h2>
+    <ExpenseListFilter />
+    <ExpenseList />
   </div>
 )
 

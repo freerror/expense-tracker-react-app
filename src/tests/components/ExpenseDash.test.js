@@ -3,12 +3,19 @@
  */
 import React from "react"
 import '@testing-library/jest-dom'
-import ExpenseDash from "../../components/ExpenseDash"
+import { waitFor } from "@testing-library/react"
+import ExpenseDash from "../../components/ExpenseDash.jsx"
 import { renderWithWrappers } from '../../utils/test-utils'
 
-jest.mock('react-fit')
+test("Test expense list", async () => {
+  const { getByText, asFragment } = renderWithWrappers(
+    <React.Suspense fallback="Test Loading">
+      <ExpenseDash />
+    </React.Suspense>
+  )
+  await waitFor(() => {
+    expect(getByText('This is from my dashboard')).toBeInTheDocument()
+    expect(asFragment()).toMatchSnapshot()
+  })
 
-test("Test expense list item", () => {
-  const { asFragment } = renderWithWrappers(<ExpenseDash />)
-  expect(asFragment()).toMatchSnapshot()
 })
