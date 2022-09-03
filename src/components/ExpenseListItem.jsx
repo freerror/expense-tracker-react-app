@@ -3,13 +3,14 @@ import { connect } from 'react-redux'
 import { removeExpense } from "../slices/expenses"
 import { useNavigate } from "react-router-dom"
 import { utcDateTime } from "../utils/date"
+import formatDollar from "../utils/formatDollar"
 
 const ExpenseListItem = ({ description, amount, createdAt, id, dispatch }) => {
 
   const navigate = useNavigate()
   return (
     <div>
-      {description} ${amount / 100} on {utcDateTime(createdAt)}
+      {description} - {formatDollar(amount)} on {utcDateTime(createdAt)}
       <span> </span>
       <button onClick={() => {
         console.log(`Edit ${id}`)
