@@ -21,5 +21,9 @@ const jsx = (
   </React.Suspense>
 )
 
-const root = ReactDOM.createRoot(document.getElementById("app"))
+const root = ReactDOM.createRoot(
+  document.body.appendChild(
+    document.createElement("DIV")
+  )
+)
 root.render(jsx)

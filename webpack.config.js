@@ -8,13 +8,9 @@ module.exports = (_, { mode }) => {
     plugins: [
       // plugins to run regardless
       new HtmlWebpackPlugin({
-        title: 'Development',
-        templateContent: `
-        <html>
-            <body>
-              <div id="app"></div>
-            </body>
-        </html>`
+        title: 'Expense Tracker',
+        filename: '../index.html',
+        favicon: './public/images/favicon.ico',
       }),
     ].concat(prod ? [
       // plugins to run in production
@@ -31,7 +27,7 @@ module.exports = (_, { mode }) => {
     output: {
       filename: '[name].bundle.js',
       chunkFilename: '[name].bundle.js',
-      path: path.resolve(__dirname, 'dist'),
+      path: path.join(__dirname, 'public', 'dist'),
       clean: true
     },
     resolve: {
@@ -71,7 +67,7 @@ module.exports = (_, { mode }) => {
     mode: 'development',
     devtool: 'eval',
     devServer: {
-      static: './dist',
+      static: './public',
     },
     optimization: {
 
