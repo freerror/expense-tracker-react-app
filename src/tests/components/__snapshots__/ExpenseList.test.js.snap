@@ -243,8 +243,11 @@ exports[`Filtering, Sorting etc Amount Ascending 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      3 expenses shown, totalling $390.00
+    </h5>
     <div>
-      c test details $120 on 2022/08/05T00:00
+      c test details - $120.00 on 2022/08/05T00:00
       <span>
          
       </span>
@@ -253,7 +256,7 @@ exports[`Filtering, Sorting etc Amount Ascending 1`] = `
       </button>
     </div>
     <div>
-      a test details $130 on 2022/08/03T00:00
+      a test details - $130.00 on 2022/08/03T00:00
       <span>
          
       </span>
@@ -262,7 +265,7 @@ exports[`Filtering, Sorting etc Amount Ascending 1`] = `
       </button>
     </div>
     <div>
-      b test description details $140 on 2022/08/01T00:00
+      b test description details - $140.00 on 2022/08/01T00:00
       <span>
          
       </span>
@@ -517,8 +520,11 @@ exports[`Filtering, Sorting etc Amount Descending 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      3 expenses shown, totalling $390.00
+    </h5>
     <div>
-      b test description details $140 on 2022/08/01T00:00
+      b test description details - $140.00 on 2022/08/01T00:00
       <span>
          
       </span>
@@ -527,7 +533,7 @@ exports[`Filtering, Sorting etc Amount Descending 1`] = `
       </button>
     </div>
     <div>
-      a test details $130 on 2022/08/03T00:00
+      a test details - $130.00 on 2022/08/03T00:00
       <span>
          
       </span>
@@ -536,7 +542,7 @@ exports[`Filtering, Sorting etc Amount Descending 1`] = `
       </button>
     </div>
     <div>
-      c test details $120 on 2022/08/05T00:00
+      c test details - $120.00 on 2022/08/05T00:00
       <span>
          
       </span>
@@ -791,8 +797,11 @@ exports[`Filtering, Sorting etc Date Ascending 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      3 expenses shown, totalling $390.00
+    </h5>
     <div>
-      b test description details $140 on 2022/08/01T00:00
+      b test description details - $140.00 on 2022/08/01T00:00
       <span>
          
       </span>
@@ -801,7 +810,7 @@ exports[`Filtering, Sorting etc Date Ascending 1`] = `
       </button>
     </div>
     <div>
-      a test details $130 on 2022/08/03T00:00
+      a test details - $130.00 on 2022/08/03T00:00
       <span>
          
       </span>
@@ -810,7 +819,7 @@ exports[`Filtering, Sorting etc Date Ascending 1`] = `
       </button>
     </div>
     <div>
-      c test details $120 on 2022/08/05T00:00
+      c test details - $120.00 on 2022/08/05T00:00
       <span>
          
       </span>
@@ -1065,8 +1074,11 @@ exports[`Filtering, Sorting etc Date Descending 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      3 expenses shown, totalling $390.00
+    </h5>
     <div>
-      c test details $120 on 2022/08/05T00:00
+      c test details - $120.00 on 2022/08/05T00:00
       <span>
          
       </span>
@@ -1075,7 +1087,7 @@ exports[`Filtering, Sorting etc Date Descending 1`] = `
       </button>
     </div>
     <div>
-      a test details $130 on 2022/08/03T00:00
+      a test details - $130.00 on 2022/08/03T00:00
       <span>
          
       </span>
@@ -1084,7 +1096,7 @@ exports[`Filtering, Sorting etc Date Descending 1`] = `
       </button>
     </div>
     <div>
-      b test description details $140 on 2022/08/01T00:00
+      b test description details - $140.00 on 2022/08/01T00:00
       <span>
          
       </span>
@@ -1359,8 +1371,11 @@ exports[`Filtering, Sorting etc Date Filtering 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      1 expense shown, totalling $130.00
+    </h5>
     <div>
-      a test details $130 on 2022/08/03T00:00
+      a test details - $130.00 on 2022/08/03T00:00
       <span>
          
       </span>
@@ -1615,8 +1630,11 @@ exports[`Filtering, Sorting etc Description Ascending 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      3 expenses shown, totalling $390.00
+    </h5>
     <div>
-      a test details $130 on 2022/08/03T00:00
+      a test details - $130.00 on 2022/08/03T00:00
       <span>
          
       </span>
@@ -1625,7 +1643,7 @@ exports[`Filtering, Sorting etc Description Ascending 1`] = `
       </button>
     </div>
     <div>
-      b test description details $140 on 2022/08/01T00:00
+      b test description details - $140.00 on 2022/08/01T00:00
       <span>
          
       </span>
@@ -1634,7 +1652,7 @@ exports[`Filtering, Sorting etc Description Ascending 1`] = `
       </button>
     </div>
     <div>
-      c test details $120 on 2022/08/05T00:00
+      c test details - $120.00 on 2022/08/05T00:00
       <span>
          
       </span>
@@ -1889,8 +1907,11 @@ exports[`Filtering, Sorting etc Description Descending 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      3 expenses shown, totalling $390.00
+    </h5>
     <div>
-      c test details $120 on 2022/08/05T00:00
+      c test details - $120.00 on 2022/08/05T00:00
       <span>
          
       </span>
@@ -1899,7 +1920,7 @@ exports[`Filtering, Sorting etc Description Descending 1`] = `
       </button>
     </div>
     <div>
-      b test description details $140 on 2022/08/01T00:00
+      b test description details - $140.00 on 2022/08/01T00:00
       <span>
          
       </span>
@@ -1908,7 +1929,7 @@ exports[`Filtering, Sorting etc Description Descending 1`] = `
       </button>
     </div>
     <div>
-      a test details $130 on 2022/08/03T00:00
+      a test details - $130.00 on 2022/08/03T00:00
       <span>
          
       </span>
@@ -1926,8 +1947,11 @@ exports[`Render Expense List 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      3 expenses shown, totalling $390.00
+    </h5>
     <div>
-      c test details $120 on 2022/08/05T00:00
+      c test details - $120.00 on 2022/08/05T00:00
       <span>
          
       </span>
@@ -1936,7 +1960,7 @@ exports[`Render Expense List 1`] = `
       </button>
     </div>
     <div>
-      a test details $130 on 2022/08/03T00:00
+      a test details - $130.00 on 2022/08/03T00:00
       <span>
          
       </span>
@@ -1945,7 +1969,7 @@ exports[`Render Expense List 1`] = `
       </button>
     </div>
     <div>
-      b test description details $140 on 2022/08/01T00:00
+      b test description details - $140.00 on 2022/08/01T00:00
       <span>
          
       </span>
@@ -1963,6 +1987,9 @@ exports[`Render Expense List with No items 1`] = `
     <h4>
       Expenses:
     </h4>
+    <h5>
+      0 expenses shown, totalling $0.00
+    </h5>
     <p>
       No expenses
     </p>

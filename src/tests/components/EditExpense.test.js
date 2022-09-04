@@ -72,10 +72,10 @@ describe("Expected result from editing", () => {
 
   test("save changes", () => {
     fireEvent.click(screen.getByText(/save expense/i))
-    expect(asFragment()).toHaveTextContent('abc123 $123.54 on 2022/08/12T00:00')
+    expect(asFragment()).toHaveTextContent('abc123 - $123.54 on 2022/08/12T00:00')
   })
   test("delete", () => {
     fireEvent.click(screen.getByText(/delete/i))
-    expect(asFragment()).not.toHaveTextContent('b test description details $140 on 1970/01/01T12:00')
+    expect(asFragment()).not.toHaveTextContent('b test description details - $140.00 on 2022/08/01T00:00')
   })
 })

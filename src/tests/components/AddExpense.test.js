@@ -60,5 +60,5 @@ test("Submission resulted in correct new entry", () => {
   fireEvent.change(descriptionInput, { target: { value: 'abc124' } })
 
   fireEvent.click(screen.getByText(/save expense/i))
-  expect(asFragment()).toHaveTextContent('abc124 $123.54 on 2022/08/12T00:00')
+  expect(asFragment()).toHaveTextContent('abc124 - $123.54 on 2022/08/12T00:00')
 })

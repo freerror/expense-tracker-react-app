@@ -447,7 +447,7 @@ exports[`Test expense list 1`] = `
                         </abbr>
                       </button>
                       <button
-                        class="react-calendar__tile react-calendar__tile--now react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                        class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
                         style="flex-basis: 14.285714285714286%; flex-shrink: 0; flex-grow: 0; overflow: hidden;"
                         type="button"
                       >
@@ -458,7 +458,7 @@ exports[`Test expense list 1`] = `
                         </abbr>
                       </button>
                       <button
-                        class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
+                        class="react-calendar__tile react-calendar__tile--now react-calendar__month-view__days__day react-calendar__month-view__days__day--weekend"
                         style="flex-basis: 14.285714285714286%; flex-shrink: 0; flex-grow: 0; overflow: hidden;"
                         type="button"
                       >
@@ -789,8 +789,11 @@ exports[`Test expense list 1`] = `
       <h4>
         Expenses:
       </h4>
+      <h5>
+        3 expenses shown, totalling $390.00
+      </h5>
       <div>
-        c test details $120 on 2022/08/05T00:00
+        c test details - $120.00 on 2022/08/05T00:00
         <span>
            
         </span>
@@ -799,7 +802,7 @@ exports[`Test expense list 1`] = `
         </button>
       </div>
       <div>
-        a test details $130 on 2022/08/03T00:00
+        a test details - $130.00 on 2022/08/03T00:00
         <span>
            
         </span>
@@ -808,7 +811,7 @@ exports[`Test expense list 1`] = `
         </button>
       </div>
       <div>
-        b test description details $140 on 2022/08/01T00:00
+        b test description details - $140.00 on 2022/08/01T00:00
         <span>
            
         </span>
