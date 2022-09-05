@@ -5,6 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = (_, { mode }) => {
   prod = mode === "production"
   return {
+    experiments: {
+      topLevelAwait: true
+    },
     plugins: [
       // plugins to run regardless
       new HtmlWebpackPlugin({
