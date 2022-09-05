@@ -10,7 +10,7 @@ module.exports = (_, { mode }) => {
       new HtmlWebpackPlugin({
         title: 'Expense Tracker',
         filename: '../index.html',
-        favicon: './public/images/favicon.ico',
+        favicon: './public/dist/favicon.ico',
       }),
     ].concat(prod ? [
       // plugins to run in production
@@ -28,7 +28,7 @@ module.exports = (_, { mode }) => {
       filename: '[name].bundle.js',
       chunkFilename: '[name].bundle.js',
       path: path.join(__dirname, 'public', 'dist'),
-      clean: true
+      clean: false
     },
     resolve: {
       extensions: ['.js', '.jsx']
