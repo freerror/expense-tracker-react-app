@@ -1,14 +1,15 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import ExpenseForm from "./ExpenseForm";
-import { addExpense } from '../slices/expenses';
+import { startAddExpense } from '../slices/expenses';
 import { useNavigate } from 'react-router-dom';
 
 const AddExpensePage = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const onSubmit = (expense) => {
-    dispatch(addExpense(expense))
+    dispatch(startAddExpense(expense))
+    console.log("onSubmit", expense)
     navigate('/')
   }
 

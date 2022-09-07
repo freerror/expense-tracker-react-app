@@ -1,4 +1,19 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+import { addDoc, collection } from 'firebase/firestore'
+import db from '../firebase/firebase.js'
+
+const startAddExpense = createAsyncThunk(
+  'expenses/fetchExpenses',
+  async (expenseData = {}, thunkAPI) => {
+    const docRef = await addDoc(collection(db, "expenses"), expenseData)
+    console.log("firestore: ", docRef.id);
+    thunkAPI.dispatch(addExpense({
+      id: docRef.id,
+      ...expenseData
+    }))
+  }
+)
+
 
 // Expenses Reducer
 const expensesReducer = createSlice({
@@ -41,4 +56,4 @@ const expensesReducer = createSlice({
 })
 
 export const { addExpense, editExpense, removeExpense } = expensesReducer.actions
-export default expensesReducer
+export { startAddExpense, expensesReducer as default }

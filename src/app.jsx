@@ -6,7 +6,6 @@ import './styles/styles.scss'
 import 'normalize.css/normalize.css'
 import createStore from './store'
 import expenses from './tests/fixtures/expenses.js'
-import './firebase/firebase.js'
 
 const preloadedState = {
   expenses: { items: [...expenses] }

@@ -1,15 +1,8 @@
 import React from "react";
 import DatePicker from "react-date-picker";
-import { v4 as uuid } from 'uuid'
-// import 'react-dates/lib/css/_datepicker.css';
-
-// const uuid = () => {
-//   return Math.floor(Math.random()) * 1000
-// }
 
 class ExpenseForm extends React.Component {
   state = {
-    id: this.props.expense?.id || uuid(),
     description: this.props.expense?.description || '',
     note: this.props.expense?.note || '',
     amount: this.props.expense?.amount ? this.props.expense.amount / 100 : '',
@@ -58,7 +51,6 @@ class ExpenseForm extends React.Component {
 
       // submit
       this.props.onSubmit({
-        id: this.state.id,
         description: this.state.description,
         amount: parseInt(parseFloat(this.state.amount * 100, 10)),
         createdAt: this.state.createdAt.getTime(),
