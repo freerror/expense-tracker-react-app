@@ -4,3 +4,5 @@ public/dist/*
 public/index.html
 yarn.lock
 yarn-error.log
+.env.prod
+.env.dev
