@@ -4,9 +4,8 @@ import db from '../firebase/firebase.js'
 
 const startAddExpense = createAsyncThunk(
   'expenses/fetchExpenses',
-  async (expenseData = {}, thunkAPI) => {
+  async (expenseData, thunkAPI) => {
     const docRef = await addDoc(collection(db, "expenses"), expenseData)
-    console.log("firestore: ", docRef.id);
     thunkAPI.dispatch(addExpense({
       id: docRef.id,
       ...expenseData

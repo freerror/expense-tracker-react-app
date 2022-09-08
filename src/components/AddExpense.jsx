@@ -9,7 +9,6 @@ const AddExpensePage = () => {
   const dispatch = useDispatch()
   const onSubmit = (expense) => {
     dispatch(startAddExpense(expense))
-    console.log("onSubmit", expense)
     navigate('/')
   }
 

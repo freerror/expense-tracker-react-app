@@ -6,9 +6,20 @@ import '@testing-library/jest-dom'
 import AddExpense from "../../components/AddExpense"
 import ExpenseList from "../../components/ExpenseList"
 import { renderWithWrappers } from '../../utils/test-utils'
-import { fireEvent, screen } from "@testing-library/react"
+import { fireEvent, screen, waitFor } from "@testing-library/react"
 
 jest.mock('react-fit')
+jest.setTimeout(4000)
+
+// Note: would prefer a real test over a mock, but firestore won't establish a
+// connection in these tests for unknown reasons.
+jest.mock("firebase/firestore", () => {
+  const addMock = jest.fn((...args) => (new Promise((r, _) => { r("abc123") })))
+  return {
+    ...jest.requireActual("firebase/firestore"),
+    addDoc: addMock
+  }
+})
 
 const mockFn = jest.fn()
 jest.mock("react-router-dom", () => ({
@@ -43,15 +54,23 @@ describe("Other behaviours", () => {
 
   })
 })
-test("Submission resulted in correct new entry", () => {
+test("Submission resulted in correct new entry", async () => {
+  jest.mock("firebase/firestore", () => {
+    const addMock = jest.fn((...args) => (new Promise((r, _) => { r("abc123") })))
+    return {
+      ...jest.requireActual("firebase/firestore"),
+      addDoc: addMock
+    }
+  })
   const { asFragment } = renderWithWrappers(
     <>
       <AddExpense />
       <ExpenseList />
     </>
   )
+
   const dateInput = screen.getByLabelText("Date")
-  fireEvent.change(dateInput, { target: { value: '2022-08-12' } })
+  fireEvent.change(dateInput, { target: { value: '2022-08-12' } }) //
 
   const amountInput = screen.getByPlaceholderText("Amount")
   fireEvent.change(amountInput, { target: { value: '123.54' } })
@@ -59,8 +78,12 @@ test("Submission resulted in correct new entry", () => {
   const descriptionInput = screen.getByPlaceholderText("Description")
   fireEvent.change(descriptionInput, { target: { value: 'abc124' } })
 
+  const noteInput = screen.getByPlaceholderText("Notes (optional)")
+  fireEvent.change(noteInput, { target: { value: 'abc124' } })
+
   fireEvent.click(screen.getByText(/save expense/i))
-  // TODO Test adding expenses now firestore is added (firestore calls time out
-  // in jest for some reason)
-  // expect(asFragment()).toHaveTextContent('abc124 - $123.54 on 2022/08/12T00:00')
+
+  await waitFor(() => {
+    return expect(asFragment()).toHaveTextContent('abc124 - $123.54 on 2022/08/12T00:00')
+  }, { timeout: 4000 })
 })
