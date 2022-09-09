@@ -3,6 +3,7 @@ import DatePicker from "react-date-picker";
 
 class ExpenseForm extends React.Component {
   state = {
+    id: this.props.expense?.id || '',
     description: this.props.expense?.description || '',
     note: this.props.expense?.note || '',
     amount: this.props.expense?.amount ? this.props.expense.amount / 100 : '',
