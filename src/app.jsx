@@ -5,12 +5,9 @@ const AppRouter = React.lazy(() => import('./routers/AppRouter'))
 import './styles/styles.scss'
 import 'normalize.css/normalize.css'
 import createStore from './store'
-import expenses from './tests/fixtures/expenses.js'
+import { startSetExpenses } from './slices/expenses'
 
-const preloadedState = {
-  expenses: { items: [...expenses] }
-}
-const store = createStore(preloadedState)
+const store = createStore()
 
 
 const jsx = (
@@ -26,4 +23,9 @@ const root = ReactDOM.createRoot(
     document.createElement("DIV")
   )
 )
-root.render(jsx)
+
+root.render(<p>Loading...</p>)
+
+store.dispatch(startSetExpenses()).then(() => {
+  root.render(jsx)
+})

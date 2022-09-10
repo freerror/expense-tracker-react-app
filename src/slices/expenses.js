@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { addDoc, deleteDoc, collection, doc } from 'firebase/firestore'
+import { addDoc, deleteDoc, collection, doc, updateDoc, getDocs } from 'firebase/firestore'
 import db from '../firebase/firebase.js'
 
 const startAddExpense = createAsyncThunk(
@@ -7,8 +7,20 @@ const startAddExpense = createAsyncThunk(
   async (expenseData, thunkAPI) => {
     const docRef = await addDoc(collection(db, "expenses"), expenseData)
     thunkAPI.dispatch(addExpense({
-      id: docRef.id,
-      ...expenseData
+      ...expenseData,
+      id: docRef.id
+    }))
+  }
+)
+
+const startEditExpense = createAsyncThunk(
+  'expenses/startEditExpense',
+  async ({ id, ...expenseData }, thunkAPI) => {
+    console.log("updating ", id, "with ", expenseData);
+    await updateDoc(doc(db, "expenses", id), expenseData)
+    thunkAPI.dispatch(editExpense({
+      ...expenseData,
+      id
     }))
   }
 )
@@ -18,6 +30,18 @@ const startRemoveExpense = createAsyncThunk(
   async (expenseID, thunkAPI) => {
     await deleteDoc(doc(db, "expenses", expenseID))
     thunkAPI.dispatch(removeExpense(expenseID))
+  }
+)
+
+const startSetExpenses = createAsyncThunk(
+  'expenses/startSetExpenses',
+  async (_, thunkAPI) => {
+    const qSnap = await getDocs(collection(db, "expenses"))
+    const expenses = []
+    qSnap.forEach(doc => {
+      expenses.push({ id: doc.id, ...doc.data() })
+    })
+    thunkAPI.dispatch(setExpenses(expenses))
   }
 )
 
@@ -58,9 +82,13 @@ const expensesReducer = createSlice({
       state.items = state.items.filter((expense) => {
         return expense.id !== payload
       })
+    },
+    // set expenses
+    setExpenses: (state, { payload }) => {
+      state.items = payload
     }
   }
 })
 
-export const { addExpense, editExpense, removeExpense } = expensesReducer.actions
-export { startAddExpense, startRemoveExpense, expensesReducer as default }
+export const { addExpense, editExpense, removeExpense, setExpenses } = expensesReducer.actions
+export { startAddExpense, startEditExpense, startRemoveExpense, startSetExpenses, expensesReducer as default }

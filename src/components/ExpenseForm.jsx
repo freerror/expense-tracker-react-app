@@ -52,6 +52,7 @@ class ExpenseForm extends React.Component {
 
       // submit
       this.props.onSubmit({
+        id: this.state.id,
         description: this.state.description,
         amount: parseInt(parseFloat(this.state.amount * 100, 10)),
         createdAt: this.state.createdAt.getTime(),

@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const AddExpensePage = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
-  const onSubmit = (expense) => {
+  const onSubmit = ({ id, ...expense }) => {
     dispatch(startAddExpense(expense))
     navigate('/')
   }
