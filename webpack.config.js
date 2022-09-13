@@ -48,7 +48,8 @@ module.exports = (_, { mode }) => {
       filename: '[name].bundle.js',
       chunkFilename: '[name].bundle.js',
       path: path.join(__dirname, 'public', 'dist'),
-      clean: false
+      clean: false,
+      publicPath: '/'
     },
     resolve: {
       extensions: ['.js', '.jsx']
@@ -87,6 +88,7 @@ module.exports = (_, { mode }) => {
     mode: 'development',
     devtool: 'eval',
     devServer: {
+      historyApiFallback: true,
       static: './public',
     },
     optimization: {
