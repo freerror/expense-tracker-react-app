@@ -1,15 +1,19 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
+import Heading from "./Heading"
 
-const Header = () => (
-  <header>
-    <h1>Expense Tracker</h1>
-    <HeaderLinks pageList={{
-      Dashboard: "/",
-      Create: "create",
-      Help: "help"
-    }} />
-  </header>
+const Header = (props) => (
+  <>
+    <header>
+      <Heading />
+      <HeaderLinks pageList={{
+        Dashboard: "dashboard",
+        Create: "create",
+        Help: "help"
+      }} />
+    </header>
+    <Outlet />
+  </>
 )
 
 const HeaderLinks = (props) => (

@@ -72,7 +72,7 @@ class ExpenseForm extends React.Component {
             autoFocus
             value={this.state.description}
             onChange={this.onDescriptionChange}
-          />
+          /><br></br>
           <DatePicker
             calendarAriaLabel="Toggle calendar"
             clearAriaLabel="Clear value"
@@ -87,18 +87,18 @@ class ExpenseForm extends React.Component {
             onCalendarClose={this.onCalClose}
             onCalendarOpen={this.onCalOpen}
             clearIcon={null}
-          />
+          /><br></br>
           <input
             type="text"
             placeholder="Amount"
             value={this.state.amount}
             onChange={this.onAmountChange}
-          />
+          /><br></br>
           <textarea
             placeholder="Notes (optional)"
             value={this.state.note}
             onChange={this.onNoteChange}
-          />
+          /><br></br>
           <button type="submit">Save Expense</button>
         </form>
         {this.props.expense && <button onClick={this.onDelete} >DELETE</button>}
