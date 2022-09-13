@@ -7,6 +7,7 @@ const EditExpensePage = React.lazy(() => import('../components/EditExpense'))
 const NotFoundPage = React.lazy(() => import('../components/404'))
 import Header from '../components/Header'
 import LoginPage from '../components/Login'
+const RegisterPage = React.lazy(() => import('../components/Register.jsx'))
 const HelpPage = React.lazy(() => import('../components/Help'))
 
 
@@ -17,6 +18,7 @@ const AppRouter = () => (
         <Routes>
           <Route path="*" element={<NotFoundPage />} />
           <Route index element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route path="app" element={<Header />} >
             <Route path="dashboard" element={<ExpenseDashboardPage />} />
             <Route path="edit/:id" element={<EditExpensePage />} />

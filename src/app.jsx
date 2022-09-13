@@ -9,7 +9,6 @@ import { startSetExpenses } from './slices/expenses'
 
 const store = createStore()
 
-
 const jsx = (
   <React.Suspense fallback={<>Loading...</>}>
     <Provider store={store}>
