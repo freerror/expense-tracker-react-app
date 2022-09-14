@@ -1,7 +1,6 @@
 import React from "react"
 import { connect } from "react-redux"
 import { setTextFilter, sortByAmount, sortByDate, flipSort, sortByDescription, setStartDate, setEndDate } from "../slices/filters"
-import { startOfMonth, endOfMonth } from "../utils/date"
 import DateRangePicker from "@wojtekmaj/react-daterange-picker"
 
 class ExpenseListFilter extends React.Component {
