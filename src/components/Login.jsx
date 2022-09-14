@@ -1,9 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import Heading from "./Heading";
 import { startLogin } from "../slices/auth"
+import { useEffect } from "react";
 
 const LoginPage = () => {
   const [state, setState] = useState({
@@ -14,6 +15,7 @@ const LoginPage = () => {
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
+  const auth = useSelector(state => state.auth)
 
   const onChangeEmail = (e) => {
     setState((prev) => ({ ...prev, email: e.target.value }))
@@ -24,6 +26,12 @@ const LoginPage = () => {
   const onStatusChange = (newStatus) => {
     setState((prev) => ({ ...prev, status: newStatus }))
   }
+
+  useEffect(() => {
+    if (auth.userCreds) {
+      navigate("/app/dashboard")
+    }
+  })
 
   const onSubmit = (e) => {
     e.preventDefault()
