@@ -13,8 +13,11 @@ const RegisterPage = () => {
     dispatch(startRegister({
       email: e.target[0].value,
       password: e.target[1].value
-    })).then(() => {
-      navigate("/app/dashboard")
+    })).then((check) => {
+      // console.log(check.message)
+      // navigate("/app/dashboard")
+    }).catch((check) => {
+      // console.log(check)
     })
   }
   return (

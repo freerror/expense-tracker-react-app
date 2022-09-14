@@ -31,6 +31,16 @@ const LoginPage = () => {
     if (auth.userCreds) {
       navigate("/app/dashboard")
     }
+    if (auth.err) {
+      if (auth.err.includes("user-not-found"))
+        onStatusChange("The email address is not recognized")
+      else if (auth.err.includes("wrong-password"))
+        onStatusChange("The password was incorrect")
+      else
+        onStatusChange(auth.err
+          .replace("Firebase: ", "")
+          .replace("auth/", ""))
+    }
   })
 
   const onSubmit = (e) => {
@@ -39,8 +49,9 @@ const LoginPage = () => {
     dispatch(startLogin({
       email: state.email,
       password: state.password
-    })).then(() => { navigate("/app/dashboard") })
+    }))
   }
+
 
   return (
     <div>
