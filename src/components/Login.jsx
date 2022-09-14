@@ -1,17 +1,19 @@
 import React from "react";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Heading from "./Heading";
 import { startLogin } from "../slices/auth"
 
 const LoginPage = () => {
   const [state, setState] = useState({
     email: "",
-    password: ""
+    password: "",
+    status: "Log in to continue"
   })
 
   const dispatch = useDispatch()
+  const navigate = useNavigate()
 
   const onChangeEmail = (e) => {
     setState((prev) => ({ ...prev, email: e.target.value }))
@@ -19,18 +21,24 @@ const LoginPage = () => {
   const onChangePassword = (e) => {
     setState((prev) => ({ ...prev, password: e.target.value }))
   }
+  const onStatusChange = (newStatus) => {
+    setState((prev) => ({ ...prev, status: newStatus }))
+  }
 
   const onSubmit = (e) => {
     e.preventDefault()
+    onStatusChange("Logging in...")
     dispatch(startLogin({
       email: state.email,
       password: state.password
-    }))
+    })).then(() => { navigate("/app/dashboard") })
   }
 
   return (
     <div>
       <Heading />
+      <div>{state.status}</div>
+      <br></br>
       <form onSubmit={onSubmit}>
         <input
           type="text"
@@ -49,6 +57,7 @@ const LoginPage = () => {
 
         <br></br>
         <button type="submit">Log in</button>
+        <br></br>
         <br></br>
         <Link to="/register">Register a new account</Link>
       </form>
