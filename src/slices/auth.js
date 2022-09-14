@@ -1,19 +1,37 @@
-import { auth, firebase } from "../firebase/firebase"
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth'
+import { auth } from "../firebase/firebase"
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth'
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import { startSetExpenses } from "./expenses"
 
 const startLogin = createAsyncThunk(
   'auth/startLogin',
   async ({ email, password }, { dispatch }) => {
+    let userCreds = null
     try {
-      const userCreds = await signInWithEmailAndPassword(auth, email, password)
-      console.log(email, password)
-      dispatch(logIn(userCreds.user))
+      userCreds = await signInWithEmailAndPassword(auth, email, password)
     }
     catch (err) {
       console.log(err.code, err.message);
-      dispatch(logInFail(err))
+      dispatch(authFail(err))
+      return
     }
+    dispatch(logIn(userCreds.user.uid))
+    dispatch(startSetExpenses())
+  }
+)
+
+const startLogout = createAsyncThunk(
+  'auth/startLogout',
+  async (_, { dispatch }) => {
+    try {
+      await signOut(auth)
+    }
+    catch (err) {
+      console.log(err.code, err.message);
+      dispatch(authFail(err))
+      return
+    }
+    dispatch(logOut())
   }
 )
 
@@ -22,12 +40,12 @@ const startRegister = createAsyncThunk(
   async ({ email, password }, { dispatch }) => {
     try {
       const userCreds = await createUserWithEmailAndPassword(auth, email, password)
-      dispatch(logIn(userCreds.user))
     }
     catch (err) {
       console.log(err.code, err.message);
-      dispatch(logInFail(err))
+      dispatch(authFail(err))
     }
+    dispatch(logIn(userCreds.user))
   }
 )
 
@@ -44,12 +62,15 @@ const authReducer = createSlice({
       state.userCreds = payload
       state.err = null
     },
-    logInFail: (state, { payload }) => {
+    logOut: (state) => {
+      state.userCreds = null
+    },
+    authFail: (state, { payload }) => {
       state.err = payload
       state.userCreds = null
     }
   }
 })
 
-export const { logIn, logInFail } = authReducer.actions
-export { startRegister, startLogin, authReducer as default }
+export const { logIn, logOut, authFail } = authReducer.actions
+export { startRegister, startLogin, startLogout, authReducer as default }
