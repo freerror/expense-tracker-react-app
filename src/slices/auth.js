@@ -38,14 +38,15 @@ const startLogout = createAsyncThunk(
 const startRegister = createAsyncThunk(
   'auth/startRegister',
   async ({ email, password }, { dispatch }) => {
+    let userCreds = null
     try {
-      const userCreds = await createUserWithEmailAndPassword(auth, email, password)
+      userCreds = await createUserWithEmailAndPassword(auth, email, password)
     }
     catch (err) {
       console.log(err.code, err.message);
       dispatch(authFail(err))
     }
-    dispatch(logIn(userCreds.user))
+    dispatch(logIn(userCreds.user.uid))
   }
 )
 
