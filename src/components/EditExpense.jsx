@@ -16,11 +16,11 @@ const EditExpensePage = () => {
         expense={targetExpense}
         onSubmit={(edittedExpense) => {
           dispatch(startEditExpense(edittedExpense))
-          navigate('/')
+          navigate('/app/dashboard')
         }}
         onDelete={(id) => {
           dispatch(startRemoveExpense(id))
-          navigate('/')
+          navigate('/app/dashboard')
         }}
       />
 

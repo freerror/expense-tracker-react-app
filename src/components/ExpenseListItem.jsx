@@ -22,7 +22,7 @@ const ExpenseListItem = ({ description, amount, createdAt, id, dispatch }) => {
       <Br />
       <button onClick={() => {
         console.log(`Edit ${id}`)
-        navigate(`/edit/${id}`)
+        navigate(`/app/edit/${id}`)
       }}
       >edit</button>
       <Br />
