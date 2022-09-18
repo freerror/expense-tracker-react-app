@@ -20,7 +20,7 @@ const Header = () => {
         <HeaderLinks {...{ onLogout }} pageList={{
           Dashboard: "dashboard",
           Create: "create",
-          Help: "help.",
+          Help: "help",
         }} />
       </header>
       <Outlet />
