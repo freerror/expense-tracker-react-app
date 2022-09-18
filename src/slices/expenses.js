@@ -5,7 +5,13 @@ import db from '../firebase/firebase.js'
 const startAddExpense = createAsyncThunk(
   'expenses/startAddExpense',
   async (expenseData, thunkAPI) => {
-    const docRef = await addDoc(collection(db, "expenses"), expenseData)
+    const uid = thunkAPI.getState().auth.userID
+    let docRef
+    try {
+      docRef = await addDoc(collection(db, "users", uid, "expenses"), expenseData)
+    } catch (err) {
+      console.log(err.message);
+    }
     thunkAPI.dispatch(addExpense({
       ...expenseData,
       id: docRef.id
@@ -17,7 +23,8 @@ const startEditExpense = createAsyncThunk(
   'expenses/startEditExpense',
   async ({ id, ...expenseData }, thunkAPI) => {
     console.log("updating ", id, "with ", expenseData);
-    await updateDoc(doc(db, "expenses", id), expenseData)
+    const uid = thunkAPI.getState().auth.userID
+    await updateDoc(doc(db, "users", uid, "expenses", id), expenseData)
     thunkAPI.dispatch(editExpense({
       ...expenseData,
       id
@@ -28,7 +35,8 @@ const startEditExpense = createAsyncThunk(
 const startRemoveExpense = createAsyncThunk(
   'expenses/startRemoveExpense',
   async (expenseID, thunkAPI) => {
-    await deleteDoc(doc(db, "expenses", expenseID))
+    const uid = thunkAPI.getState().auth.userID
+    await deleteDoc(doc(db, "users", uid, "expenses", expenseID))
     thunkAPI.dispatch(removeExpense(expenseID))
   }
 )
@@ -36,7 +44,8 @@ const startRemoveExpense = createAsyncThunk(
 const startSetExpenses = createAsyncThunk(
   'expenses/startSetExpenses',
   async (_, thunkAPI) => {
-    const qSnap = await getDocs(collection(db, "expenses"))
+    const uid = thunkAPI.getState().auth.userID
+    const qSnap = await getDocs(collection(db, "users", uid, "expenses"))
     const expenses = []
     qSnap.forEach(doc => {
       expenses.push({ id: doc.id, ...doc.data() })
