@@ -44,7 +44,7 @@ module.exports = (_, { mode }) => {
       chunkFilename: '[name].bundle.js',
       path: path.join(__dirname, 'public', 'dist'),
       clean: false,
-      publicPath: '/'
+      publicPath: '/dist'
     },
     resolve: {
       extensions: ['.js', '.jsx']
