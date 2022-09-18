@@ -50,22 +50,22 @@ const startRegister = createAsyncThunk(
 const authReducer = createSlice({
   name: 'auth',
   initialState: {
-    userCreds: null,
+    userID: null,
     err: null
   },
   reducers: {
     logIn: (state, { payload }) => {
-      state.userCreds = payload
+      state.userID = payload
       state.err = null
     },
     logOut: (state) => {
-      state.userCreds = null
+      state.userID = null
     }
   },
   extraReducers: {
     [startLogin.rejected]: (state, { payload }) => {
       state.err = payload
-      state.userCreds = null
+      state.userID = null
     }
   }
 })

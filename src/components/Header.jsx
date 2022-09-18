@@ -1,24 +1,16 @@
 import React from "react"
-import { useEffect } from "react"
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { NavLink, Outlet, useNavigate } from "react-router-dom"
 import { startLogout } from "../slices/auth"
 import Heading from "./Heading"
 
-const Header = (props) => {
+const Header = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  const auth = useSelector(state => state.auth)
 
   const onLogout = () => {
     dispatch(startLogout()).then(() => { navigate("/") })
   }
-
-  useEffect(() => {
-    if (!auth.userCreds) {
-      navigate("/")
-    }
-  })
 
   return (
     <>

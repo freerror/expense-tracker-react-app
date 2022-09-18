@@ -28,7 +28,7 @@ const LoginPage = () => {
   }
 
   useEffect(() => {
-    if (auth.userCreds) {
+    if (auth.userID) {
       navigate("/app/dashboard")
     }
     if (auth.err) {
