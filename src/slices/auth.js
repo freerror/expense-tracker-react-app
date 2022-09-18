@@ -1,7 +1,7 @@
 import { auth } from "../firebase/firebase"
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth'
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
-import { startSetExpenses } from "./expenses"
+import { setExpenses, startSetExpenses } from "./expenses"
 
 const startLogin = createAsyncThunk(
   'auth/startLogin',
@@ -28,6 +28,7 @@ const startLogout = createAsyncThunk(
       return rejectWithValue(err.message)
     }
     dispatch(logOut())
+    dispatch(setExpenses([]))
   }
 )
 
