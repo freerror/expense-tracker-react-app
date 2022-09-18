@@ -17,7 +17,7 @@ module.exports = (_, { mode }) => {
       topLevelAwait: true
     },
     plugins: [
-      // plugins to run regardless
+      // plugins to run regardless.
       new webpack.DefinePlugin({
         'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
         'process.env.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
