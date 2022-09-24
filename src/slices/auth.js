@@ -3,6 +3,21 @@ import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } f
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
 import { setExpenses, startSetExpenses } from "./expenses"
 
+const startRestoreUser = createAsyncThunk(
+  'auth/startRestoreUser',
+  async (_, { dispatch, rejectWithValue }) => {
+    let uidLocal;
+    try {
+      uidLocal = localStorage.getItem("uid")
+    }
+    catch (err) {
+      return rejectWithValue(err.message)
+    }
+    dispatch(logIn(uidLocal))
+    dispatch(startSetExpenses())
+  }
+)
+
 const startLogin = createAsyncThunk(
   'auth/startLogin',
   async ({ email, password }, { dispatch, rejectWithValue }) => {
@@ -13,7 +28,9 @@ const startLogin = createAsyncThunk(
     catch (err) {
       return rejectWithValue(err.message)
     }
-    dispatch(logIn(userCreds.user.uid))
+    const uid = userCreds.user.uid
+    localStorage.setItem('uid', uid)
+    dispatch(logIn(uid))
     dispatch(startSetExpenses())
   }
 )
@@ -27,6 +44,7 @@ const startLogout = createAsyncThunk(
     catch (err) {
       return rejectWithValue(err.message)
     }
+    localStorage.removeItem('uid')
     dispatch(logOut())
     dispatch(setExpenses([]))
   }
@@ -72,4 +90,4 @@ const authReducer = createSlice({
 })
 
 export const { logIn, logOut, authFail } = authReducer.actions
-export { startRegister, startLogin, startLogout, authReducer as default }
+export { startRegister, startRestoreUser, startLogin, startLogout, authReducer as default }

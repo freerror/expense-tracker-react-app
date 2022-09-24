@@ -1,21 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import Heading from "./Heading";
-import { startLogin } from "../slices/auth"
-import { useEffect } from "react";
+import { startLogin, startRestoreUser } from "../slices/auth"
 
 const LoginPage = () => {
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
   const [state, setState] = useState({
     email: "",
     password: "",
     status: "Log in to continue"
   })
-
-  const dispatch = useDispatch()
-  const navigate = useNavigate()
-  const auth = useSelector(state => state.auth)
+  const auth = useSelector(authState => authState.auth)
 
   const onChangeEmail = (e) => {
     setState((prev) => ({ ...prev, email: e.target.value }))
@@ -23,35 +21,38 @@ const LoginPage = () => {
   const onChangePassword = (e) => {
     setState((prev) => ({ ...prev, password: e.target.value }))
   }
-  const onStatusChange = (newStatus) => {
-    setState((prev) => ({ ...prev, status: newStatus }))
+  const onStatusChange = ({ statusMessage, isError }) => {
+    console.log(statusMessage, isError)
+    const statusDiv = document.getElementById("status")
+    statusDiv.innerText = statusMessage
+    if (isError) {
+      statusDiv.classList.add("status-err")
+    } else {
+      statusDiv.classList.remove("status-err")
+    }
   }
-
-  useEffect(() => {
-    if (auth.userID) {
-      navigate("/app/dashboard")
-    }
-    if (auth.err) {
-      if (auth.err.includes("user-not-found"))
-        onStatusChange("The email address is not recognized")
-      else if (auth.err.includes("wrong-password"))
-        onStatusChange("The password was incorrect")
-      else
-        onStatusChange(auth.err
-          .replace("Firebase: ", "")
-          .replace("auth/", ""))
-    }
-  })
-
   const onSubmit = (e) => {
     e.preventDefault()
-    onStatusChange("Logging in...")
+    onStatusChange({ statusMessage: "Logging in...", isError: false })
     dispatch(startLogin({
       email: state.email,
       password: state.password
     }))
   }
 
+  useEffect(() => {
+    if (auth.userID) {
+      navigate("/app/dashboard")
+    } else { dispatch(startRestoreUser()) }
+    if (auth.err) {
+      if (auth.err.includes("user-not-found"))
+        onStatusChange({ statusMessage: "The email address is not recognized", isError: true })
+      else if (auth.err.includes("wrong-password"))
+        onStatusChange({ statusMessage: "The password was incorrect", isError: true })
+      else
+        onStatusChange({ statusMessage: auth.err.replace("Firebase: ", "").replace("auth/", ""), isError: true })
+    }
+  })
 
   return (
     <div>
