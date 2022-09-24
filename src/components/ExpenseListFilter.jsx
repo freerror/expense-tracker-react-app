@@ -38,43 +38,65 @@ class ExpenseListFilter extends React.Component {
   }
   render() {
     return (
-      <div>
-        <input type="text"
-          value={this.props.filters.text}
-          onChange={(e) => {
-            this.props.dispatch(setTextFilter(e.target.value))
-          }} />
-        <select data-testid="select" value={this.props.filters.sortBy} onChange={(e) => {
-          console.log(`Sort by ${e.target.value}`)
-          if (e.target.value === 'date')
-            this.props.dispatch(sortByDate())
-          else if (e.target.value === 'amount')
-            this.props.dispatch(sortByAmount())
-          else if (e.target.value === 'description')
-            this.props.dispatch(sortByDescription())
-        }}>
-          <option data-testid="select-option" value="date">Date</option>
-          <option data-testid="select-option" value="amount">Amount</option>
-          <option data-testid="select-option" value="description">Description</option>
-        </select>
-        <button onClick={() => {
-          console.log("flip sort")
-          const sortBy = this.props.filters.sortBy
-          this.props.dispatch(flipSort())
-        }} >{this.props.filters.sortDescending ? "Descending" : "Ascending"}</button>
-        <DateRangePicker
-          calendarAriaLabel="Toggle calendar"
-          clearAriaLabel="Clear value"
-          dayAriaLabel="Day"
-          monthAriaLabel="Month"
-          nativeInputAriaLabel="Date Range"
-          onChange={this.onDateRangeChange}
-          onCalendarClose={this.onCalClose}
-          onCalendarOpen={this.onCalOpen}
-          format="y/MM/dd"
-          isOpen={this.state.calendarFocussed}
-          value={this.getDateRange()}
-        />
+      <div className="content-container">
+        <div className="input-group">
+          <div className="input-group__item">
+            <input type="text"
+              className="text-input text-input--filter"
+              placeholder="Search"
+              value={this.props.filters.text}
+              onChange={(e) => {
+                this.props.dispatch(setTextFilter(e.target.value))
+              }} />
+          </div>
+          <div className="input-group__item">
+            <DateRangePicker
+              className="text-input text-input--filter"
+              calendarAriaLabel="Toggle calendar"
+              clearAriaLabel="Clear value"
+              dayAriaLabel="Day"
+              monthAriaLabel="Month"
+              nativeInputAriaLabel="Date Range"
+              onChange={this.onDateRangeChange}
+              onCalendarClose={this.onCalClose}
+              onCalendarOpen={this.onCalOpen}
+              format="y/MM/dd"
+              isOpen={this.state.calendarFocussed}
+              value={this.getDateRange()}
+            />
+          </div>
+          <div className="input-group__item input-group__hint-container">
+            <div className="input-group__hint">Sort by:</div>
+          </div>
+          <div className="input-group__item">
+            <select
+              className="text-input text-input--select text-input--filter"
+              data-testid="select"
+              value={this.props.filters.sortBy}
+              onChange={(e) => {
+                console.log(`Sort by ${e.target.value}`)
+                if (e.target.value === 'date')
+                  this.props.dispatch(sortByDate())
+                else if (e.target.value === 'amount')
+                  this.props.dispatch(sortByAmount())
+                else if (e.target.value === 'description')
+                  this.props.dispatch(sortByDescription())
+              }}>
+              <option data-testid="select-option" value="date">Date</option>
+              <option data-testid="select-option" value="amount">Amount</option>
+              <option data-testid="select-option" value="description">Description</option>
+            </select>
+          </div>
+          <div className="input-group__item">
+            <button
+              className="text-input text-input--button text-input--filter"
+              onClick={() => {
+                console.log("flip sort")
+                const sortBy = this.props.filters.sortBy
+                this.props.dispatch(flipSort())
+              }} >{this.props.filters.sortDescending ? "Descending" : "Ascending"}</button>
+          </div>
+        </div>
       </div >
     )
   }

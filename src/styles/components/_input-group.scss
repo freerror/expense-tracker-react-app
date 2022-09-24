@@ -1,0 +1,40 @@
+.input-group {
+  margin: 0 0 $m-size;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-breakpoint) {
+    flex-direction: row;
+    margin: 0 0 $l-size;
+  }
+}
+
+.input-group__item {
+  font-size: $m-size;
+  line-height: 1;
+  margin-bottom: $s-size;
+  padding: 0 $s-size 0 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin-bottom: 0;
+  }
+
+  textarea {
+    min-width: 50%;
+    max-width: 90%;
+    min-height: 10rem;
+  }
+}
+
+.input-group__hint-container {
+  min-width: fit-content;
+  padding-top: $sl-size;
+}
+
+.input-group__hint {
+  display: inline;
+  font-size: $m-size;
+  font-weight: 700;
+  line-height: 1;
+  vertical-align: middle;
+}

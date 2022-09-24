@@ -63,45 +63,60 @@ class ExpenseForm extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="content-container">
         {this.state.err && <div>Error: {this.state.err}</div>}
         <form onSubmit={this.onSubmit}>
-          <input
-            type="text"
-            placeholder="Description"
-            autoFocus
-            value={this.state.description}
-            onChange={this.onDescriptionChange}
-          /><br></br>
-          <DatePicker
-            calendarAriaLabel="Toggle calendar"
-            clearAriaLabel="Clear value"
-            dayAriaLabel="Day"
-            monthAriaLabel="Month"
-            nativeInputAriaLabel="Date"
-            onChange={this.onDateChange}
-            value={this.state.createdAt}
-            yearAriaLabel="Year"
-            format="y/MM/dd"
-            isOpen={this.state.calendarFocussed}
-            onCalendarClose={this.onCalClose}
-            onCalendarOpen={this.onCalOpen}
-            clearIcon={null}
-          /><br></br>
-          <input
-            type="text"
-            placeholder="Amount"
-            value={this.state.amount}
-            onChange={this.onAmountChange}
-          /><br></br>
-          <textarea
-            placeholder="Notes (optional)"
-            value={this.state.note}
-            onChange={this.onNoteChange}
-          /><br></br>
-          <button type="submit">Save Expense</button>
+          <div className="input-group">
+            <div className="input-group__item">
+
+              <input
+                className="text-input text-input--form"
+                type="text"
+                placeholder="Description"
+                autoFocus
+                value={this.state.description}
+                onChange={this.onDescriptionChange}
+              />
+            </div>
+            <div className="input-group__item">
+              <DatePicker
+                className="text-input text-input--form"
+                calendarAriaLabel="Toggle calendar"
+                clearAriaLabel="Clear value"
+                dayAriaLabel="Day"
+                monthAriaLabel="Month"
+                nativeInputAriaLabel="Date"
+                onChange={this.onDateChange}
+                value={this.state.createdAt}
+                yearAriaLabel="Year"
+                format="y/MM/dd"
+                isOpen={this.state.calendarFocussed}
+                onCalendarClose={this.onCalClose}
+                onCalendarOpen={this.onCalOpen}
+                clearIcon={null}
+              />
+            </div>
+            <div className="input-group__item">
+              <input
+                className="text-input text-input--form"
+                type="text"
+                placeholder="Amount"
+                value={this.state.amount}
+                onChange={this.onAmountChange}
+              />
+            </div>
+          </div>
+          <div className="input-group__item input-group__item--textarea">
+            <textarea
+              className="text-input text-input--form"
+              placeholder="Notes (optional)"
+              value={this.state.note}
+              onChange={this.onNoteChange}
+            />
+          </div>
+          <button className="button" type="submit">Save Expense</button>
         </form>
-        {this.props.expense && <button onClick={this.onDelete} >DELETE</button>}
+        {this.props.expense && <button className="button" onClick={this.onDelete} >DELETE</button>}
       </div>
     )
   }

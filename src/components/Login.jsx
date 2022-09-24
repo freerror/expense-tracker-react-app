@@ -55,32 +55,35 @@ const LoginPage = () => {
   })
 
   return (
-    <div>
-      <Heading />
-      <div>{state.status}</div>
-      <br></br>
-      <form onSubmit={onSubmit}>
-        <input
-          type="text"
-          placeholder="Email"
-          autoFocus
-          value={state.email}
-          onChange={onChangeEmail}
-        />
-        <br></br>
-        <input
-          type="password"
-          placeholder="Password"
-          value={state.password}
-          onChange={onChangePassword}
-        />
-
-        <br></br>
-        <button type="submit">Log in</button>
-        <br></br>
-        <br></br>
-        <Link to="/register">Register a new account</Link>
-      </form>
+    <div className="box-layout">
+      <div className="box-layout__box">
+        <div className="box-layout__heading">
+          <Heading />
+        </div>
+        <div id="status">Log in to continue</div>
+        <form onSubmit={onSubmit}>
+          <input
+            className="text-input"
+            type="text"
+            placeholder="Email"
+            autoFocus
+            value={state.email}
+            onChange={onChangeEmail}
+          />
+          <br></br>
+          <input
+            className="text-input"
+            type="password"
+            placeholder="Password"
+            value={state.password}
+            onChange={onChangePassword}
+          />
+          <br></br>
+          <button type="submit" className="button">Log in</button>
+          <br></br>
+          <Link to="/register">Register a new account</Link>
+        </form>
+      </div>
     </div>
   )
 }

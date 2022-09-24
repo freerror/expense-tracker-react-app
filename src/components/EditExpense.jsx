@@ -11,7 +11,11 @@ const EditExpensePage = () => {
   const targetExpense = useSelector(state => state.expenses.items.find(expense => expense.id === id))
   return (
     <div>
-      <h4>Edit Expense</h4>
+      <div className="page-header">
+        <div className="content-container">
+          <h1 className='page-header__title'>Edit Expense</h1>
+        </div>
+      </div>
       <ExpenseForm
         expense={targetExpense}
         onSubmit={(edittedExpense) => {

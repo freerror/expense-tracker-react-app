@@ -1,0 +1,25 @@
+.button {
+  background-color: $light-blue;
+  border-color: transparent;
+  border-style: solid;
+  border-radius: $s-size;
+  display: inline-block;
+  color: white;
+  padding: $s-size $m-size;
+  margin: $m-size 0;
+  font-size: $m-size;
+  box-shadow: 3px 3px 10px -2px transparentize($color: #000000, $amount: 0.9);
+  text-decoration: none;
+}
+
+.button--link {
+  font-size: $sl-size;
+  background-color: transparent;
+  border-color: transparentize($color: #ffffff, $amount: 0.9);
+  padding: $xs-size $s-size;
+  min-width: fit-content;
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+}
