@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  .wide {
+    min-width: 80%;
+
+    button {
+      width: 83%
+    }
+  }
+}

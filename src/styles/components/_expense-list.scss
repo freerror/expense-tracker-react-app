@@ -1,0 +1,74 @@
+.expense-list-header {
+  background: $light-grey;
+  border: 1px solid darken($light-grey, 3%);
+  border-bottom: none;
+  color: $grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $s-size $l-size;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: $s-size $m-size;
+  }
+}
+
+.expense-list-body {
+  background: lighten($light-grey, 5%);
+  border: 1px solid darken($light-grey, 3%);
+  border-top: none;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: $grey;
+  margin-bottom: 10rem;
+}
+
+.expense-list-body-item {
+  border-top: 1px solid darken($light-grey, 3%);
+  color: $dark-grey;
+  display: flex;
+  flex-direction: column;
+  padding: $s-size $l-size;
+  text-decoration: none;
+  transition: background .3s ease-in;
+
+  &:hover {
+    background: lighten($light-grey, 3%);
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $m-size
+  }
+}
+
+.expense-list-body-item__title {
+  margin: 0;
+  word-break: break-word;
+}
+
+.expense-list-body-item__date {
+  color: $grey;
+  font-size: $sl-size;
+}
+
+.expense-list-body-item__amount {
+  margin: $s-size 0 0 0;
+
+  @media (min-width: $desktop-breakpoint) {
+    margin: 0;
+    padding-left: $l-size;
+  }
+}
+
+.expense-list-body-item--no-expenses {
+  color: $grey;
+
+  &:hover {
+    background-color: unset;
+  }
+}

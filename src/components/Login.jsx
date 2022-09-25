@@ -61,7 +61,7 @@ const LoginPage = () => {
           <Heading />
         </div>
         <div id="status">Log in to continue</div>
-        <form onSubmit={onSubmit}>
+        <form className="form" onSubmit={onSubmit}>
           <input
             className="text-input"
             type="text"

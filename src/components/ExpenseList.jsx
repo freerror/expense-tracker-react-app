@@ -8,18 +8,27 @@ import ExpensesSummary from "./ExpensesSummary.jsx"
 const ExpenseList = ({ expenses }) => {
   const expenseCount = expenses.length
   return (
-    <div>
+    <>
       <ExpensesSummary {...{ expenseCount, expenses }} />
       <ExpenseListFilter />
       <div className="content-container ">
-        {expenseCount > 0 ? (
-          expenses.map((item, idx) => (
-            <ExpenseListItem {...item} key={idx} />
-          ))) : (
-          <p>No expenses</p>
-        )}
+        <div className="expense-list-header">
+          <div className="expense-list-header-item mobile">Expenses</div>
+          <div className="expense-list-header-item desktop">Expense</div>
+          <div className="expense-list-header-item desktop">Amount</div>
+        </div>
+        <div className="expense-list-body">
+          {expenseCount > 0 ? (
+            expenses.map((item, idx) => (
+              <ExpenseListItem {...item} key={idx} />
+            ))) : (
+            <div className="expense-list-body-item expense-list-body-item--no-expenses">
+              <span>No expenses</span>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
 

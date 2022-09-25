@@ -8,13 +8,11 @@
   padding: $s-size;
   margin: $m-size 0 0;
   min-height: $l-size;
-  min-width: 90%;
 }
 
 .text-input--filter,
 .text-input--form {
   margin: 0;
-  min-width: unset;
 }
 
 .text-input--select {
@@ -23,8 +21,6 @@
 }
 
 .text-input--button {
-  color: white;
   padding: 0.8em;
-  background-color: $light-grey;
-  border-color: transparent
+  background-color: white;
 }

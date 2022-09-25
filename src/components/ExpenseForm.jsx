@@ -64,18 +64,27 @@ class ExpenseForm extends React.Component {
   render() {
     return (
       <div className="content-container">
-        {this.state.err && <div>Error: {this.state.err}</div>}
-        <form onSubmit={this.onSubmit}>
+        <form className="form" onSubmit={this.onSubmit}>
           <div className="input-group">
+            {this.state.err && <div className="input-group__item status-err">Error: {this.state.err}</div>}
             <div className="input-group__item">
 
               <input
-                className="text-input text-input--form"
+                className="text-input text-input--form wide"
                 type="text"
                 placeholder="Description"
                 autoFocus
                 value={this.state.description}
                 onChange={this.onDescriptionChange}
+              />
+            </div>
+            <div className="input-group__item">
+              <input
+                className="text-input text-input--form"
+                type="text"
+                placeholder="Amount"
+                value={this.state.amount}
+                onChange={this.onAmountChange}
               />
             </div>
             <div className="input-group__item">
@@ -96,25 +105,18 @@ class ExpenseForm extends React.Component {
                 clearIcon={null}
               />
             </div>
-            <div className="input-group__item">
-              <input
-                className="text-input text-input--form"
-                type="text"
-                placeholder="Amount"
-                value={this.state.amount}
-                onChange={this.onAmountChange}
-              />
-            </div>
           </div>
           <div className="input-group__item input-group__item--textarea">
             <textarea
-              className="text-input text-input--form"
+              className="text-input text-input--form wide"
               placeholder="Notes (optional)"
               value={this.state.note}
               onChange={this.onNoteChange}
             />
           </div>
-          <button className="button" type="submit">Save Expense</button>
+          <div className="input-group__item">
+            <button className="button" type="submit">Save Expense</button>
+          </div>
         </form>
         {this.props.expense && <button className="button" onClick={this.onDelete} >DELETE</button>}
       </div>

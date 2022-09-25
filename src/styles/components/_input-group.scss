@@ -17,12 +17,24 @@
 
   @media (min-width: $desktop-breakpoint) {
     margin-bottom: 0;
+
+    input {
+      width: 90%
+    }
   }
 
   textarea {
     min-width: 50%;
     max-width: 90%;
     min-height: 10rem;
+
+  }
+
+  .status-err {
+    padding: 2rem;
+    background-color: transparentize($color: #ff0000, $amount: 0.9);
+    width: fit-content;
+    border-radius: 1rem;
   }
 }
 

@@ -10,6 +10,10 @@ const LoginPage = React.lazy(() => import('../components/Login'))
 const PrivateRoutes = React.lazy(() => import('./PrivateRoutes'))
 const RegisterPage = React.lazy(() => import('../components/Register.jsx'))
 const HelpPage = React.lazy(() => import('../components/Help'))
+import { Provider } from 'react-redux'
+import createStore from '../store'
+
+const store = createStore()
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,7 +36,9 @@ const router = createBrowserRouter(
 
 const AppRouter = () => (
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store} >
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 )
 
