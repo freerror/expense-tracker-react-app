@@ -3,143 +3,185 @@
 exports[`Other behaviours Page render 1`] = `
 <DocumentFragment>
   <div>
-    <h4>
-      Edit Expense
-    </h4>
-    <div>
-      <form>
-        <input
-          placeholder="Description"
-          type="text"
-          value="abc123"
-        />
+    <div
+      class="page-header"
+    >
+      <div
+        class="content-container"
+      >
+        <h1
+          class="page-header__title"
+        >
+          Edit Expense
+        </h1>
+      </div>
+    </div>
+    <div
+      class="content-container"
+    >
+      <form
+        class="form"
+      >
         <div
-          class="react-date-picker react-date-picker--closed react-date-picker--enabled"
+          class="input-group"
         >
           <div
-            class="react-date-picker__wrapper"
+            class="input-group__item"
+          >
+            <input
+              class="text-input text-input--form wide"
+              placeholder="Description"
+              type="text"
+              value="abc123"
+            />
+          </div>
+          <div
+            class="input-group__item"
+          >
+            <input
+              class="text-input text-input--form"
+              placeholder="Amount"
+              type="text"
+              value="123.54"
+            />
+          </div>
+          <div
+            class="input-group__item"
           >
             <div
-              class="react-date-picker__inputGroup"
+              class="react-date-picker react-date-picker--closed react-date-picker--enabled text-input text-input--form"
             >
-              <input
-                aria-label="Date"
-                max="275760-09-13"
-                min="0001-01-01"
-                name="date"
-                style="visibility: hidden; position: absolute; z-index: -999;"
-                type="date"
-                value="2022-08-12"
-              />
-              <input
-                aria-label="Year"
-                autocomplete="off"
-                class="react-date-picker__inputGroup__input react-date-picker__inputGroup__year"
-                data-input="true"
-                inputmode="numeric"
-                max="275760"
-                min="1"
-                name="year"
-                placeholder="----"
-                step="1"
-                style="width: 20px;"
-                type="number"
-                value="2022"
-              />
-              <span
-                class="react-date-picker__inputGroup__divider"
+              <div
+                class="react-date-picker__wrapper"
               >
-                /
-              </span>
-              <span
-                class="react-date-picker__inputGroup__leadingZero"
-              >
-                0
-              </span>
-              <input
-                aria-label="Month"
-                autocomplete="off"
-                class="react-date-picker__inputGroup__input react-date-picker__inputGroup__month react-date-picker__inputGroup__input--hasLeadingZero"
-                data-input="true"
-                inputmode="numeric"
-                max="12"
-                min="1"
-                name="month"
-                placeholder="--"
-                style="width: 5px;"
-                type="number"
-                value="8"
-              />
-              <span
-                class="react-date-picker__inputGroup__divider"
-              >
-                /
-              </span>
-              <input
-                aria-label="Day"
-                autocomplete="off"
-                class="react-date-picker__inputGroup__input react-date-picker__inputGroup__day"
-                data-input="true"
-                inputmode="numeric"
-                max="31"
-                min="1"
-                name="day"
-                placeholder="--"
-                style="width: 10px;"
-                type="number"
-                value="12"
-              />
+                <div
+                  class="react-date-picker__inputGroup"
+                >
+                  <input
+                    aria-label="Date"
+                    max="275760-09-13"
+                    min="0001-01-01"
+                    name="date"
+                    style="visibility: hidden; position: absolute; z-index: -999;"
+                    type="date"
+                    value="2022-08-12"
+                  />
+                  <input
+                    aria-label="Year"
+                    autocomplete="off"
+                    class="react-date-picker__inputGroup__input react-date-picker__inputGroup__year"
+                    data-input="true"
+                    inputmode="numeric"
+                    max="275760"
+                    min="1"
+                    name="year"
+                    placeholder="----"
+                    step="1"
+                    style="width: 20px;"
+                    type="number"
+                    value="2022"
+                  />
+                  <span
+                    class="react-date-picker__inputGroup__divider"
+                  >
+                    /
+                  </span>
+                  <span
+                    class="react-date-picker__inputGroup__leadingZero"
+                  >
+                    0
+                  </span>
+                  <input
+                    aria-label="Month"
+                    autocomplete="off"
+                    class="react-date-picker__inputGroup__input react-date-picker__inputGroup__month react-date-picker__inputGroup__input--hasLeadingZero"
+                    data-input="true"
+                    inputmode="numeric"
+                    max="12"
+                    min="1"
+                    name="month"
+                    placeholder="--"
+                    style="width: 5px;"
+                    type="number"
+                    value="8"
+                  />
+                  <span
+                    class="react-date-picker__inputGroup__divider"
+                  >
+                    /
+                  </span>
+                  <input
+                    aria-label="Day"
+                    autocomplete="off"
+                    class="react-date-picker__inputGroup__input react-date-picker__inputGroup__day"
+                    data-input="true"
+                    inputmode="numeric"
+                    max="31"
+                    min="1"
+                    name="day"
+                    placeholder="--"
+                    style="width: 10px;"
+                    type="number"
+                    value="12"
+                  />
+                </div>
+                <button
+                  aria-label="Toggle calendar"
+                  class="react-date-picker__calendar-button react-date-picker__button"
+                  type="button"
+                >
+                  <svg
+                    class="react-date-picker__calendar-button__icon react-date-picker__button__icon"
+                    height="19"
+                    stroke="black"
+                    stroke-width="2"
+                    viewBox="0 0 19 19"
+                    width="19"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      fill="none"
+                      height="15"
+                      width="15"
+                      x="2"
+                      y="2"
+                    />
+                    <line
+                      x1="6"
+                      x2="6"
+                      y1="0"
+                      y2="4"
+                    />
+                    <line
+                      x1="13"
+                      x2="13"
+                      y1="0"
+                      y2="4"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
-            <button
-              aria-label="Toggle calendar"
-              class="react-date-picker__calendar-button react-date-picker__button"
-              type="button"
-            >
-              <svg
-                class="react-date-picker__calendar-button__icon react-date-picker__button__icon"
-                height="19"
-                stroke="black"
-                stroke-width="2"
-                viewBox="0 0 19 19"
-                width="19"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  fill="none"
-                  height="15"
-                  width="15"
-                  x="2"
-                  y="2"
-                />
-                <line
-                  x1="6"
-                  x2="6"
-                  y1="0"
-                  y2="4"
-                />
-                <line
-                  x1="13"
-                  x2="13"
-                  y1="0"
-                  y2="4"
-                />
-              </svg>
-            </button>
           </div>
         </div>
-        <input
-          placeholder="Amount"
-          type="text"
-          value="123.54"
-        />
-        <textarea
-          placeholder="Notes (optional)"
-        />
-        <button
-          type="submit"
+        <div
+          class="input-group__item input-group__item--textarea"
         >
-          Save Expense
-        </button>
+          <textarea
+            class="text-input text-input--form wide"
+            placeholder="Notes (optional)"
+          />
+        </div>
+        <div
+          class="input-group__item"
+        >
+          <button
+            class="button"
+            type="submit"
+          >
+            Save Expense
+          </button>
+        </div>
       </form>
     </div>
   </div>

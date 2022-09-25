@@ -14,7 +14,7 @@ test("Test expense list", async () => {
     </React.Suspense>
   )
   await waitFor(() => {
-    expect(getByText('This is from my dashboard')).toBeInTheDocument()
+    expect(getByText(/totalling/i)).toBeInTheDocument()
     expect(asFragment()).toMatchSnapshot()
   })
 

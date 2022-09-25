@@ -3,12 +3,25 @@
 exports[`Test 404 page 1`] = `
 <DocumentFragment>
   <div>
-    404! - 
-    <a
-      href="/"
-    >
-      Dashboard
-    </a>
+    <h2>
+      404!
+    </h2>
+    <ul>
+      <li>
+        <a
+          href="/"
+        >
+          Login
+        </a>
+      </li>
+      <li>
+        <a
+          href="/app/dashboard"
+        >
+          Dashboard
+        </a>
+      </li>
+    </ul>
   </div>
 </DocumentFragment>
 `;

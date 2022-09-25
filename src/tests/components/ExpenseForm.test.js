@@ -5,7 +5,6 @@ import React from "react"
 import '@testing-library/jest-dom'
 import ExpenseForm from "../../components/ExpenseForm"
 import { renderWithWrappers } from '../../utils/test-utils'
-import expenses from '../fixtures/expenses'
 import { fireEvent, screen } from "@testing-library/react"
 
 jest.mock('react-fit')
@@ -65,7 +64,6 @@ test("onSubmit of form returns the correct object", () => {
   // submission
   fireEvent.click(screen.getByText(/save expense/i))
   expect(spy.mock.lastCall[0]).toMatchObject({
-    id: '0252a5f9-f6c1-469a-acb1-cb6d5b6ff35c',
     amount: 12354,
     description: 'abc123',
     note: 'abc123',

@@ -2,276 +2,405 @@
 
 exports[`Filtering, Sorting etc Amount Ascending 1`] = `
 <DocumentFragment>
-  <div>
-    <input
-      type="text"
-      value=""
-    />
-    <select
-      data-testid="select"
-    >
-      <option
-        data-testid="select-option"
-        value="date"
-      >
-        Date
-      </option>
-      <option
-        data-testid="select-option"
-        value="amount"
-      >
-        Amount
-      </option>
-      <option
-        data-testid="select-option"
-        value="description"
-      >
-        Description
-      </option>
-    </select>
-    <button>
-      Ascending
-    </button>
+  <div
+    class="page-header"
+  >
     <div
-      class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled"
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          3
+        </span>
+         expenses, totalling 
+        <span>
+          $390.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
     >
       <div
-        class="react-daterange-picker__wrapper"
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
       >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_from"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
+          <div
+            class="react-daterange-picker__wrapper"
           >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <span
-          class="react-daterange-picker__range-divider"
-        >
-          –
-        </span>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="input-group__hint"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_to"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+          Sort by:
         </div>
-        <button
-          aria-label="Clear value"
-          class="react-daterange-picker__clear-button react-daterange-picker__button"
-          type="button"
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
         >
-          <svg
-            class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
+          <option
+            data-testid="select-option"
+            value="date"
           >
-            <line
-              x1="4"
-              x2="15"
-              y1="4"
-              y2="15"
-            />
-            <line
-              x1="15"
-              x2="4"
-              y1="4"
-              y2="15"
-            />
-          </svg>
-        </button>
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
         <button
-          aria-label="Toggle calendar"
-          class="react-daterange-picker__calendar-button react-daterange-picker__button"
-          type="button"
+          class="text-input text-input--button text-input--filter"
         >
-          <svg
-            class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="15"
-              width="15"
-              x="2"
-              y="2"
-            />
-            <line
-              x1="6"
-              x2="6"
-              y1="0"
-              y2="4"
-            />
-            <line
-              x1="13"
-              x2="13"
-              y1="0"
-              y2="4"
-            />
-          </svg>
+          Ascending
         </button>
       </div>
     </div>
   </div>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      3 expenses shown, totalling $390.00
-    </h5>
-    <div>
-      c test details - $120.00 on 2022/08/05T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
     </div>
-    <div>
-      a test details - $130.00 on 2022/08/03T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
-    </div>
-    <div>
-      b test description details - $140.00 on 2022/08/01T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+    <div
+      class="expense-list-body"
+    >
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc125"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            c test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/05
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $120.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc124"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            a test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/03
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $130.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc123"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            b test description details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/01
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $140.00
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </DocumentFragment>
@@ -279,276 +408,405 @@ exports[`Filtering, Sorting etc Amount Ascending 1`] = `
 
 exports[`Filtering, Sorting etc Amount Descending 1`] = `
 <DocumentFragment>
-  <div>
-    <input
-      type="text"
-      value=""
-    />
-    <select
-      data-testid="select"
-    >
-      <option
-        data-testid="select-option"
-        value="date"
-      >
-        Date
-      </option>
-      <option
-        data-testid="select-option"
-        value="amount"
-      >
-        Amount
-      </option>
-      <option
-        data-testid="select-option"
-        value="description"
-      >
-        Description
-      </option>
-    </select>
-    <button>
-      Descending
-    </button>
+  <div
+    class="page-header"
+  >
     <div
-      class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled"
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          3
+        </span>
+         expenses, totalling 
+        <span>
+          $390.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
     >
       <div
-        class="react-daterange-picker__wrapper"
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
       >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_from"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
+          <div
+            class="react-daterange-picker__wrapper"
           >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <span
-          class="react-daterange-picker__range-divider"
-        >
-          –
-        </span>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="input-group__hint"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_to"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+          Sort by:
         </div>
-        <button
-          aria-label="Clear value"
-          class="react-daterange-picker__clear-button react-daterange-picker__button"
-          type="button"
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
         >
-          <svg
-            class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
+          <option
+            data-testid="select-option"
+            value="date"
           >
-            <line
-              x1="4"
-              x2="15"
-              y1="4"
-              y2="15"
-            />
-            <line
-              x1="15"
-              x2="4"
-              y1="4"
-              y2="15"
-            />
-          </svg>
-        </button>
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
         <button
-          aria-label="Toggle calendar"
-          class="react-daterange-picker__calendar-button react-daterange-picker__button"
-          type="button"
+          class="text-input text-input--button text-input--filter"
         >
-          <svg
-            class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="15"
-              width="15"
-              x="2"
-              y="2"
-            />
-            <line
-              x1="6"
-              x2="6"
-              y1="0"
-              y2="4"
-            />
-            <line
-              x1="13"
-              x2="13"
-              y1="0"
-              y2="4"
-            />
-          </svg>
+          Descending
         </button>
       </div>
     </div>
   </div>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      3 expenses shown, totalling $390.00
-    </h5>
-    <div>
-      b test description details - $140.00 on 2022/08/01T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
     </div>
-    <div>
-      a test details - $130.00 on 2022/08/03T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
-    </div>
-    <div>
-      c test details - $120.00 on 2022/08/05T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+    <div
+      class="expense-list-body"
+    >
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc123"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            b test description details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/01
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $140.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc124"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            a test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/03
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $130.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc125"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            c test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/05
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $120.00
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </DocumentFragment>
@@ -556,276 +814,405 @@ exports[`Filtering, Sorting etc Amount Descending 1`] = `
 
 exports[`Filtering, Sorting etc Date Ascending 1`] = `
 <DocumentFragment>
-  <div>
-    <input
-      type="text"
-      value=""
-    />
-    <select
-      data-testid="select"
-    >
-      <option
-        data-testid="select-option"
-        value="date"
-      >
-        Date
-      </option>
-      <option
-        data-testid="select-option"
-        value="amount"
-      >
-        Amount
-      </option>
-      <option
-        data-testid="select-option"
-        value="description"
-      >
-        Description
-      </option>
-    </select>
-    <button>
-      Ascending
-    </button>
+  <div
+    class="page-header"
+  >
     <div
-      class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled"
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          3
+        </span>
+         expenses, totalling 
+        <span>
+          $390.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
     >
       <div
-        class="react-daterange-picker__wrapper"
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
       >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_from"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
+          <div
+            class="react-daterange-picker__wrapper"
           >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <span
-          class="react-daterange-picker__range-divider"
-        >
-          –
-        </span>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="input-group__hint"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_to"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+          Sort by:
         </div>
-        <button
-          aria-label="Clear value"
-          class="react-daterange-picker__clear-button react-daterange-picker__button"
-          type="button"
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
         >
-          <svg
-            class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
+          <option
+            data-testid="select-option"
+            value="date"
           >
-            <line
-              x1="4"
-              x2="15"
-              y1="4"
-              y2="15"
-            />
-            <line
-              x1="15"
-              x2="4"
-              y1="4"
-              y2="15"
-            />
-          </svg>
-        </button>
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
         <button
-          aria-label="Toggle calendar"
-          class="react-daterange-picker__calendar-button react-daterange-picker__button"
-          type="button"
+          class="text-input text-input--button text-input--filter"
         >
-          <svg
-            class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="15"
-              width="15"
-              x="2"
-              y="2"
-            />
-            <line
-              x1="6"
-              x2="6"
-              y1="0"
-              y2="4"
-            />
-            <line
-              x1="13"
-              x2="13"
-              y1="0"
-              y2="4"
-            />
-          </svg>
+          Ascending
         </button>
       </div>
     </div>
   </div>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      3 expenses shown, totalling $390.00
-    </h5>
-    <div>
-      b test description details - $140.00 on 2022/08/01T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
     </div>
-    <div>
-      a test details - $130.00 on 2022/08/03T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
-    </div>
-    <div>
-      c test details - $120.00 on 2022/08/05T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+    <div
+      class="expense-list-body"
+    >
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc123"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            b test description details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/01
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $140.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc124"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            a test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/03
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $130.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc125"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            c test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/05
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $120.00
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </DocumentFragment>
@@ -833,276 +1220,405 @@ exports[`Filtering, Sorting etc Date Ascending 1`] = `
 
 exports[`Filtering, Sorting etc Date Descending 1`] = `
 <DocumentFragment>
-  <div>
-    <input
-      type="text"
-      value=""
-    />
-    <select
-      data-testid="select"
-    >
-      <option
-        data-testid="select-option"
-        value="date"
-      >
-        Date
-      </option>
-      <option
-        data-testid="select-option"
-        value="amount"
-      >
-        Amount
-      </option>
-      <option
-        data-testid="select-option"
-        value="description"
-      >
-        Description
-      </option>
-    </select>
-    <button>
-      Descending
-    </button>
+  <div
+    class="page-header"
+  >
     <div
-      class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled"
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          3
+        </span>
+         expenses, totalling 
+        <span>
+          $390.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
     >
       <div
-        class="react-daterange-picker__wrapper"
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
       >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_from"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
+          <div
+            class="react-daterange-picker__wrapper"
           >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <span
-          class="react-daterange-picker__range-divider"
-        >
-          –
-        </span>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="input-group__hint"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_to"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+          Sort by:
         </div>
-        <button
-          aria-label="Clear value"
-          class="react-daterange-picker__clear-button react-daterange-picker__button"
-          type="button"
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
         >
-          <svg
-            class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
+          <option
+            data-testid="select-option"
+            value="date"
           >
-            <line
-              x1="4"
-              x2="15"
-              y1="4"
-              y2="15"
-            />
-            <line
-              x1="15"
-              x2="4"
-              y1="4"
-              y2="15"
-            />
-          </svg>
-        </button>
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
         <button
-          aria-label="Toggle calendar"
-          class="react-daterange-picker__calendar-button react-daterange-picker__button"
-          type="button"
+          class="text-input text-input--button text-input--filter"
         >
-          <svg
-            class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="15"
-              width="15"
-              x="2"
-              y="2"
-            />
-            <line
-              x1="6"
-              x2="6"
-              y1="0"
-              y2="4"
-            />
-            <line
-              x1="13"
-              x2="13"
-              y1="0"
-              y2="4"
-            />
-          </svg>
+          Descending
         </button>
       </div>
     </div>
   </div>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      3 expenses shown, totalling $390.00
-    </h5>
-    <div>
-      c test details - $120.00 on 2022/08/05T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
     </div>
-    <div>
-      a test details - $130.00 on 2022/08/03T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
-    </div>
-    <div>
-      b test description details - $140.00 on 2022/08/01T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+    <div
+      class="expense-list-body"
+    >
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc125"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            c test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/05
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $120.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc124"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            a test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/03
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $130.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc123"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            b test description details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/01
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $140.00
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </DocumentFragment>
@@ -1110,278 +1626,377 @@ exports[`Filtering, Sorting etc Date Descending 1`] = `
 
 exports[`Filtering, Sorting etc Date Filtering 1`] = `
 <DocumentFragment>
-  <div>
-    <input
-      type="text"
-      value=""
-    />
-    <select
-      data-testid="select"
-    >
-      <option
-        data-testid="select-option"
-        value="date"
-      >
-        Date
-      </option>
-      <option
-        data-testid="select-option"
-        value="amount"
-      >
-        Amount
-      </option>
-      <option
-        data-testid="select-option"
-        value="description"
-      >
-        Description
-      </option>
-    </select>
-    <button>
-      Descending
-    </button>
+  <div
+    class="page-header"
+  >
     <div
-      class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled"
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          1
+        </span>
+         expense, totalling 
+        <span>
+          $130.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
     >
       <div
-        class="react-daterange-picker__wrapper"
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
       >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_from"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value="2022-08-02"
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 20px;"
-            type="number"
-            value="2022"
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
+          <div
+            class="react-daterange-picker__wrapper"
           >
-            /
-          </span>
-          <span
-            class="react-daterange-picker__inputGroup__leadingZero"
-          >
-            0
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month react-daterange-picker__inputGroup__input--hasLeadingZero"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 5px;"
-            type="number"
-            value="8"
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <span
-            class="react-daterange-picker__inputGroup__leadingZero"
-          >
-            0
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day react-daterange-picker__inputGroup__input--hasLeadingZero"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 5px;"
-            type="number"
-            value="2"
-          />
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value="2022-08-02"
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 20px;"
+                type="number"
+                value="2022"
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <span
+                class="react-daterange-picker__inputGroup__leadingZero"
+              >
+                0
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month react-daterange-picker__inputGroup__input--hasLeadingZero"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 5px;"
+                type="number"
+                value="8"
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <span
+                class="react-daterange-picker__inputGroup__leadingZero"
+              >
+                0
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day react-daterange-picker__inputGroup__input--hasLeadingZero"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 5px;"
+                type="number"
+                value="2"
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value="2022-08-04"
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 20px;"
+                type="number"
+                value="2022"
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <span
+                class="react-daterange-picker__inputGroup__leadingZero"
+              >
+                0
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month react-daterange-picker__inputGroup__input--hasLeadingZero"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 5px;"
+                type="number"
+                value="8"
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <span
+                class="react-daterange-picker__inputGroup__leadingZero"
+              >
+                0
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day react-daterange-picker__inputGroup__input--hasLeadingZero"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 5px;"
+                type="number"
+                value="4"
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <span
-          class="react-daterange-picker__range-divider"
-        >
-          –
-        </span>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="input-group__hint"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_to"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value="2022-08-04"
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 20px;"
-            type="number"
-            value="2022"
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <span
-            class="react-daterange-picker__inputGroup__leadingZero"
-          >
-            0
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month react-daterange-picker__inputGroup__input--hasLeadingZero"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 5px;"
-            type="number"
-            value="8"
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <span
-            class="react-daterange-picker__inputGroup__leadingZero"
-          >
-            0
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day react-daterange-picker__inputGroup__input--hasLeadingZero"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 5px;"
-            type="number"
-            value="4"
-          />
+          Sort by:
         </div>
-        <button
-          aria-label="Clear value"
-          class="react-daterange-picker__clear-button react-daterange-picker__button"
-          type="button"
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
         >
-          <svg
-            class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
+          <option
+            data-testid="select-option"
+            value="date"
           >
-            <line
-              x1="4"
-              x2="15"
-              y1="4"
-              y2="15"
-            />
-            <line
-              x1="15"
-              x2="4"
-              y1="4"
-              y2="15"
-            />
-          </svg>
-        </button>
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
         <button
-          aria-label="Toggle calendar"
-          class="react-daterange-picker__calendar-button react-daterange-picker__button"
-          type="button"
+          class="text-input text-input--button text-input--filter"
         >
-          <svg
-            class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="15"
-              width="15"
-              x="2"
-              y="2"
-            />
-            <line
-              x1="6"
-              x2="6"
-              y1="0"
-              y2="4"
-            />
-            <line
-              x1="13"
-              x2="13"
-              y1="0"
-              y2="4"
-            />
-          </svg>
+          Descending
         </button>
       </div>
     </div>
   </div>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      1 expense shown, totalling $130.00
-    </h5>
-    <div>
-      a test details - $130.00 on 2022/08/03T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
+    </div>
+    <div
+      class="expense-list-body"
+    >
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc124"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            a test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/03
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $130.00
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </DocumentFragment>
@@ -1389,276 +2004,405 @@ exports[`Filtering, Sorting etc Date Filtering 1`] = `
 
 exports[`Filtering, Sorting etc Description Ascending 1`] = `
 <DocumentFragment>
-  <div>
-    <input
-      type="text"
-      value=""
-    />
-    <select
-      data-testid="select"
-    >
-      <option
-        data-testid="select-option"
-        value="date"
-      >
-        Date
-      </option>
-      <option
-        data-testid="select-option"
-        value="amount"
-      >
-        Amount
-      </option>
-      <option
-        data-testid="select-option"
-        value="description"
-      >
-        Description
-      </option>
-    </select>
-    <button>
-      Ascending
-    </button>
+  <div
+    class="page-header"
+  >
     <div
-      class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled"
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          3
+        </span>
+         expenses, totalling 
+        <span>
+          $390.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
     >
       <div
-        class="react-daterange-picker__wrapper"
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
       >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_from"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
+          <div
+            class="react-daterange-picker__wrapper"
           >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <span
-          class="react-daterange-picker__range-divider"
-        >
-          –
-        </span>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="input-group__hint"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_to"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+          Sort by:
         </div>
-        <button
-          aria-label="Clear value"
-          class="react-daterange-picker__clear-button react-daterange-picker__button"
-          type="button"
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
         >
-          <svg
-            class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
+          <option
+            data-testid="select-option"
+            value="date"
           >
-            <line
-              x1="4"
-              x2="15"
-              y1="4"
-              y2="15"
-            />
-            <line
-              x1="15"
-              x2="4"
-              y1="4"
-              y2="15"
-            />
-          </svg>
-        </button>
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
         <button
-          aria-label="Toggle calendar"
-          class="react-daterange-picker__calendar-button react-daterange-picker__button"
-          type="button"
+          class="text-input text-input--button text-input--filter"
         >
-          <svg
-            class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="15"
-              width="15"
-              x="2"
-              y="2"
-            />
-            <line
-              x1="6"
-              x2="6"
-              y1="0"
-              y2="4"
-            />
-            <line
-              x1="13"
-              x2="13"
-              y1="0"
-              y2="4"
-            />
-          </svg>
+          Ascending
         </button>
       </div>
     </div>
   </div>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      3 expenses shown, totalling $390.00
-    </h5>
-    <div>
-      a test details - $130.00 on 2022/08/03T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
     </div>
-    <div>
-      b test description details - $140.00 on 2022/08/01T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
-    </div>
-    <div>
-      c test details - $120.00 on 2022/08/05T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+    <div
+      class="expense-list-body"
+    >
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc124"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            a test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/03
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $130.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc123"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            b test description details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/01
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $140.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc125"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            c test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/05
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $120.00
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </DocumentFragment>
@@ -1666,276 +2410,405 @@ exports[`Filtering, Sorting etc Description Ascending 1`] = `
 
 exports[`Filtering, Sorting etc Description Descending 1`] = `
 <DocumentFragment>
-  <div>
-    <input
-      type="text"
-      value=""
-    />
-    <select
-      data-testid="select"
-    >
-      <option
-        data-testid="select-option"
-        value="date"
-      >
-        Date
-      </option>
-      <option
-        data-testid="select-option"
-        value="amount"
-      >
-        Amount
-      </option>
-      <option
-        data-testid="select-option"
-        value="description"
-      >
-        Description
-      </option>
-    </select>
-    <button>
-      Descending
-    </button>
+  <div
+    class="page-header"
+  >
     <div
-      class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled"
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          3
+        </span>
+         expenses, totalling 
+        <span>
+          $390.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
     >
       <div
-        class="react-daterange-picker__wrapper"
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
       >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_from"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
+          <div
+            class="react-daterange-picker__wrapper"
           >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <span
-          class="react-daterange-picker__range-divider"
-        >
-          –
-        </span>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
         <div
-          class="react-daterange-picker__inputGroup"
+          class="input-group__hint"
         >
-          <input
-            aria-label="Date Range"
-            max="275760-09-13"
-            min="0001-01-01"
-            name="daterange_to"
-            style="visibility: hidden; position: absolute; z-index: -999;"
-            type="date"
-            value=""
-          />
-          <input
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
-            data-input="true"
-            inputmode="numeric"
-            max="275760"
-            min="1"
-            name="year"
-            placeholder="----"
-            step="1"
-            style="width: 16px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Month"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
-            data-input="true"
-            inputmode="numeric"
-            max="12"
-            min="1"
-            name="month"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
-          <span
-            class="react-date-picker__inputGroup__divider"
-          >
-            /
-          </span>
-          <input
-            aria-label="Day"
-            autocomplete="off"
-            class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
-            data-input="true"
-            inputmode="numeric"
-            max="31"
-            min="1"
-            name="day"
-            placeholder="--"
-            style="width: 8px;"
-            type="number"
-            value=""
-          />
+          Sort by:
         </div>
-        <button
-          aria-label="Clear value"
-          class="react-daterange-picker__clear-button react-daterange-picker__button"
-          type="button"
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
         >
-          <svg
-            class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
+          <option
+            data-testid="select-option"
+            value="date"
           >
-            <line
-              x1="4"
-              x2="15"
-              y1="4"
-              y2="15"
-            />
-            <line
-              x1="15"
-              x2="4"
-              y1="4"
-              y2="15"
-            />
-          </svg>
-        </button>
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
         <button
-          aria-label="Toggle calendar"
-          class="react-daterange-picker__calendar-button react-daterange-picker__button"
-          type="button"
+          class="text-input text-input--button text-input--filter"
         >
-          <svg
-            class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
-            height="19"
-            stroke="black"
-            stroke-width="2"
-            viewBox="0 0 19 19"
-            width="19"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              fill="none"
-              height="15"
-              width="15"
-              x="2"
-              y="2"
-            />
-            <line
-              x1="6"
-              x2="6"
-              y1="0"
-              y2="4"
-            />
-            <line
-              x1="13"
-              x2="13"
-              y1="0"
-              y2="4"
-            />
-          </svg>
+          Descending
         </button>
       </div>
     </div>
   </div>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      3 expenses shown, totalling $390.00
-    </h5>
-    <div>
-      c test details - $120.00 on 2022/08/05T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
     </div>
-    <div>
-      b test description details - $140.00 on 2022/08/01T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
-    </div>
-    <div>
-      a test details - $130.00 on 2022/08/03T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+    <div
+      class="expense-list-body"
+    >
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc125"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            c test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/05
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $120.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc123"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            b test description details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/01
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $140.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc124"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            a test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/03
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $130.00
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </DocumentFragment>
@@ -1943,39 +2816,405 @@ exports[`Filtering, Sorting etc Description Descending 1`] = `
 
 exports[`Render Expense List 1`] = `
 <DocumentFragment>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      3 expenses shown, totalling $390.00
-    </h5>
-    <div>
-      c test details - $120.00 on 2022/08/05T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  <div
+    class="page-header"
+  >
+    <div
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          3
+        </span>
+         expenses, totalling 
+        <span>
+          $390.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
     </div>
-    <div>
-      a test details - $130.00 on 2022/08/03T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
+    >
+      <div
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <div
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
+        >
+          <div
+            class="react-daterange-picker__wrapper"
+          >
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
+        <div
+          class="input-group__hint"
+        >
+          Sort by:
+        </div>
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
+        >
+          <option
+            data-testid="select-option"
+            value="date"
+          >
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <button
+          class="text-input text-input--button text-input--filter"
+        >
+          Descending
+        </button>
+      </div>
     </div>
-    <div>
-      b test description details - $140.00 on 2022/08/01T00:00
-      <span>
-         
-      </span>
-      <button>
-        edit
-      </button>
+  </div>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
+    </div>
+    <div
+      class="expense-list-body"
+    >
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc125"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            c test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/05
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $120.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc124"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            a test details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/03
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $130.00
+          </h3>
+        </div>
+      </a>
+      <a
+        class="expense-list-body-item"
+        href="/app/edit/abc123"
+      >
+        <div>
+          <h3
+            class="expense-list-body-item__title"
+          >
+            b test description details
+          </h3>
+          <span
+            class="expense-list-body-item__date"
+          >
+            2022/08/01
+          </span>
+        </div>
+        <div>
+          <h3
+            class="expense-list-body-item__amount"
+          >
+            $140.00
+          </h3>
+        </div>
+      </a>
     </div>
   </div>
 </DocumentFragment>
@@ -1983,16 +3222,341 @@ exports[`Render Expense List 1`] = `
 
 exports[`Render Expense List with No items 1`] = `
 <DocumentFragment>
-  <div>
-    <h4>
-      Expenses:
-    </h4>
-    <h5>
-      0 expenses shown, totalling $0.00
-    </h5>
-    <p>
-      No expenses
-    </p>
+  <div
+    class="page-header"
+  >
+    <div
+      class="content-container"
+    >
+      <h1
+        class="page-header__title"
+      >
+        <span>
+          0
+        </span>
+         expenses, totalling 
+        <span>
+          $0.00
+        </span>
+      </h1>
+      <div
+        class="page-header__actions"
+      >
+        <a
+          class="button"
+          href="/app/create"
+        >
+          Add Expense
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container"
+  >
+    <div
+      class="input-group"
+    >
+      <div
+        class="input-group__item"
+      >
+        <input
+          class="text-input text-input--filter"
+          placeholder="Search"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <div
+          class="react-daterange-picker react-daterange-picker--closed react-daterange-picker--enabled text-input text-input--filter"
+        >
+          <div
+            class="react-daterange-picker__wrapper"
+          >
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_from"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <span
+              class="react-daterange-picker__range-divider"
+            >
+              –
+            </span>
+            <div
+              class="react-daterange-picker__inputGroup"
+            >
+              <input
+                aria-label="Date Range"
+                max="275760-09-13"
+                min="0001-01-01"
+                name="daterange_to"
+                style="visibility: hidden; position: absolute; z-index: -999;"
+                type="date"
+                value=""
+              />
+              <input
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__year"
+                data-input="true"
+                inputmode="numeric"
+                max="275760"
+                min="1"
+                name="year"
+                placeholder="----"
+                step="1"
+                style="width: 16px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Month"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__month"
+                data-input="true"
+                inputmode="numeric"
+                max="12"
+                min="1"
+                name="month"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+              <span
+                class="react-date-picker__inputGroup__divider"
+              >
+                /
+              </span>
+              <input
+                aria-label="Day"
+                autocomplete="off"
+                class="react-daterange-picker__inputGroup__input react-daterange-picker__inputGroup__day"
+                data-input="true"
+                inputmode="numeric"
+                max="31"
+                min="1"
+                name="day"
+                placeholder="--"
+                style="width: 8px;"
+                type="number"
+                value=""
+              />
+            </div>
+            <button
+              aria-label="Clear value"
+              class="react-daterange-picker__clear-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__clear-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line
+                  x1="4"
+                  x2="15"
+                  y1="4"
+                  y2="15"
+                />
+                <line
+                  x1="15"
+                  x2="4"
+                  y1="4"
+                  y2="15"
+                />
+              </svg>
+            </button>
+            <button
+              aria-label="Toggle calendar"
+              class="react-daterange-picker__calendar-button react-daterange-picker__button"
+              type="button"
+            >
+              <svg
+                class="react-daterange-picker__calendar-button__icon react-daterange-picker__button__icon"
+                height="19"
+                stroke="black"
+                stroke-width="2"
+                viewBox="0 0 19 19"
+                width="19"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="15"
+                  width="15"
+                  x="2"
+                  y="2"
+                />
+                <line
+                  x1="6"
+                  x2="6"
+                  y1="0"
+                  y2="4"
+                />
+                <line
+                  x1="13"
+                  x2="13"
+                  y1="0"
+                  y2="4"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="input-group__item input-group__hint-container"
+      >
+        <div
+          class="input-group__hint"
+        >
+          Sort by:
+        </div>
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <select
+          class="text-input text-input--select text-input--filter"
+          data-testid="select"
+        >
+          <option
+            data-testid="select-option"
+            value="date"
+          >
+            Date
+          </option>
+          <option
+            data-testid="select-option"
+            value="amount"
+          >
+            Amount
+          </option>
+          <option
+            data-testid="select-option"
+            value="description"
+          >
+            Description
+          </option>
+        </select>
+      </div>
+      <div
+        class="input-group__item"
+      >
+        <button
+          class="text-input text-input--button text-input--filter"
+        >
+          Descending
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    class="content-container "
+  >
+    <div
+      class="expense-list-header"
+    >
+      <div
+        class="expense-list-header-item mobile"
+      >
+        Expenses
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Expense
+      </div>
+      <div
+        class="expense-list-header-item desktop"
+      >
+        Amount
+      </div>
+    </div>
+    <div
+      class="expense-list-body"
+    >
+      <div
+        class="expense-list-body-item expense-list-body-item--no-expenses"
+      >
+        <span>
+          No expenses
+        </span>
+      </div>
+    </div>
   </div>
 </DocumentFragment>
 `;

@@ -2,14 +2,29 @@
 
 exports[`Test expense list item 1`] = `
 <DocumentFragment>
-  <div>
-    b test description details - $140.00 on 2022/08/01T00:00
-    <span>
-       
-    </span>
-    <button>
-      edit
-    </button>
-  </div>
+  <a
+    class="expense-list-body-item"
+    href="/app/edit/abc123"
+  >
+    <div>
+      <h3
+        class="expense-list-body-item__title"
+      >
+        b test description details
+      </h3>
+      <span
+        class="expense-list-body-item__date"
+      >
+        2022/08/01
+      </span>
+    </div>
+    <div>
+      <h3
+        class="expense-list-body-item__amount"
+      >
+        $140.00
+      </h3>
+    </div>
+  </a>
 </DocumentFragment>
 `;

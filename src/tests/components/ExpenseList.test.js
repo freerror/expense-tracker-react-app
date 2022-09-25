@@ -25,7 +25,6 @@ describe('Filtering, Sorting etc', () => {
   beforeEach(() => {
     ({ asFragment } = renderWithWrappers(
       <>
-        <ExpenseListFilter />
         <ExpenseList />
       </>
     ))

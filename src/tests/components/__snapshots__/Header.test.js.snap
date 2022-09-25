@@ -2,38 +2,29 @@
 
 exports[`Render Header 1`] = `
 <DocumentFragment>
-  <header>
-    <h1>
-      Expense Tracker
-    </h1>
-    <div>
-      <ul>
-        <li>
-          <a
-            aria-current="page"
-            class="active"
-            href="/"
-          >
-            Dashboard
-          </a>
-        </li>
-        <li>
-          <a
-            class=""
-            href="/create"
-          >
-            Create
-          </a>
-        </li>
-        <li>
-          <a
-            class=""
-            href="/help"
-          >
-            Help
-          </a>
-        </li>
-      </ul>
+  <header
+    class="header"
+  >
+    <div
+      class="content-container"
+    >
+      <div
+        class="header__content"
+      >
+        <a
+          class="header__title"
+          href="/dashboard"
+        >
+          <h1>
+            Expense Tracker
+          </h1>
+        </a>
+        <button
+          class="button button--link"
+        >
+          Sign out
+        </button>
+      </div>
     </div>
   </header>
 </DocumentFragment>
