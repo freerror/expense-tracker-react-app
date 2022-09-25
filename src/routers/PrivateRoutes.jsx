@@ -5,8 +5,10 @@ import { startRestoreUser } from "../slices/auth"
 
 const PrivateRoutes = () => {
   const dispatch = useDispatch()
-  dispatch(startRestoreUser())
   const auth = useSelector(state => state.auth.userID)
+  if (!auth) {
+    dispatch(startRestoreUser())
+  }
 
   return (
     auth ? <Outlet /> : <Navigate to="/" />

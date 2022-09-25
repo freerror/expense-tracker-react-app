@@ -70,13 +70,15 @@ const expensesReducer = createSlice({
       amount = undefined,
       createdAt = 0
     } }) => {
-      state.items.push({
-        id,
-        description,
-        note,
-        amount,
-        createdAt
-      })
+      if (!state.items.map(item => item.id).includes(id)) {
+        state.items.push({
+          id,
+          description,
+          note,
+          amount,
+          createdAt
+        })
+      }
     },
     // edit Expense
     editExpense: (state, { payload }) => {
