@@ -20,6 +20,7 @@
     "node": "16.x",
     "yarn": "1.x"
   },
+  "browserslist": "> 0.25%, not dead",
   "license": "MIT",
   "scripts": {
     "serve": "webpack serve --open --mode=development",
