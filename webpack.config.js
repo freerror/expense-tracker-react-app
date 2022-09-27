@@ -1,7 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CompressionPlugin = require("compression-webpack-plugin")
 
 module.exports = (_, { mode }) => {
   prod = mode === "production"
@@ -18,6 +18,7 @@ module.exports = (_, { mode }) => {
     },
     plugins: [
       // plugins to run regardless.
+      new CompressionPlugin(),
       new webpack.DefinePlugin({
         'process.env.FIREBASE_API_KEY': JSON.stringify(process.env.FIREBASE_API_KEY),
         'process.env.FIREBASE_AUTH_DOMAIN': JSON.stringify(process.env.FIREBASE_AUTH_DOMAIN),
