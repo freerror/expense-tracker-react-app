@@ -85,6 +85,10 @@ const authReducer = createSlice({
     [startLogin.rejected]: (state, { payload }) => {
       state.err = payload
       state.userID = null
+    },
+    [startRegister.rejected]: (state, { payload }) => {
+      state.err = payload
+      state.userID = null
     }
   }
 })

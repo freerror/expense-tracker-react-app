@@ -25,4 +25,6 @@ button:disabled {
 .status-err {
   color: red;
   font-style: italic;
+  overflow-wrap: break-word;
+  max-width: 30rem;
 }

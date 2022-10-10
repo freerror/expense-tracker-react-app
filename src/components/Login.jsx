@@ -8,21 +8,17 @@ import { startLogin, startRestoreUser } from "../slices/auth"
 const LoginPage = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  const [state, setState] = useState({
-    email: "",
-    password: "",
-    status: "Log in to continue"
-  })
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
   const auth = useSelector(authState => authState.auth)
 
   const onChangeEmail = (e) => {
-    setState((prev) => ({ ...prev, email: e.target.value }))
+    setEmail(e.target.value)
   }
   const onChangePassword = (e) => {
-    setState((prev) => ({ ...prev, password: e.target.value }))
+    setPassword(e.target.value)
   }
   const onStatusChange = ({ statusMessage, isError }) => {
-    console.log(statusMessage, isError)
     const statusDiv = document.getElementById("status")
     statusDiv.innerText = statusMessage
     if (isError) {
@@ -35,8 +31,8 @@ const LoginPage = () => {
     e.preventDefault()
     onStatusChange({ statusMessage: "Logging in...", isError: false })
     dispatch(startLogin({
-      email: state.email,
-      password: state.password
+      email: email,
+      password: password
     }))
   }
 
@@ -67,7 +63,7 @@ const LoginPage = () => {
             type="text"
             placeholder="Email"
             autoFocus
-            value={state.email}
+            value={email}
             onChange={onChangeEmail}
           />
           <br></br>
@@ -75,7 +71,7 @@ const LoginPage = () => {
             className="text-input"
             type="password"
             placeholder="Password"
-            value={state.password}
+            value={password}
             onChange={onChangePassword}
           />
           <br></br>
