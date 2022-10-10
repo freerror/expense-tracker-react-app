@@ -6,8 +6,6 @@ used a different date-picker and added additional functionality like sort order
 and sort by description. My testing approach was vastly different and does a
 better job of modelling user interaction.
 
-## TODO
-- [ ] Add basic getting-started installation instructions
-- [ ] Add acknowledgements (Udemy tutor etc)
-- [ ] Add example render
-- [ ] Add FOSS License
+## Gratitude
+
+While I did a lot of things independently, big thanks to Andrew Mead for his [Udemy course](https://www.udemy.com/course/react-2nd-edition/). I tip my hat!
